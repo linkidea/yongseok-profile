@@ -5,7 +5,7 @@
 ## 1. 개요
 
 - **무엇**: 강용석(내부감사·리스크·구매·PI, 경영지원 17년)의 개인 프로필 사이트. 주 독자는 헤드헌터·채용 담당자.
-- **구조**: 2페이지 — `index.html`(랜딩: 첫 화면→하는 일→성과→연락) + `career.html`(경력 상세: 소개→경력→자격·교육→FAQ→연락)
+- **구조**: 2페이지 — `index.html`(랜딩: 첫 화면→주요 업무→성과와 이력→연락처) + `career.html`(경력 상세: 소개→경력→자격·교육→FAQ→연락처)
 - **공개 URL**: https://linkidea.github.io/yongseok-profile/ (경력: `/career.html`)
 - **저장소**: https://github.com/linkidea/yongseok-profile (public, main 브랜치)
 - **관리 정본**: `..\261014_프로필 페이지(공개용).md` — 확정 문구·체크리스트의 최신 원본. 문구 변경 시 이 문서도 함께 갱신할 것.
