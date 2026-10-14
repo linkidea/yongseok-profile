@@ -120,3 +120,44 @@ h1 {
   .timeline li { grid-template-columns: 1fr; gap: 3px; }
   .num { font-size: 24px; }
 }
+
+/* ---------- ERM 다이어그램 ---------- */
+.erm-fig { margin: 38px 0 0; }
+.erm-fig svg { display: block; width: 100%; max-width: 720px; height: auto; }
+.erm-fig text { font-family: 'Pretendard Variable', Pretendard, -apple-system, 'Apple SD Gothic Neo', sans-serif; }
+.erm-fig .erm-no { font-size: 14px; font-weight: 700; letter-spacing: 1.5px; fill: var(--amber-deep); }
+.erm-fig .erm-tx { font-size: 21px; font-weight: 700; fill: var(--navy); }
+.erm-fig figcaption { margin-top: 10px; font-size: 12.5px; color: var(--muted); }
+
+/* ---------- 인쇄 최적화 (Ctrl+P → PDF) ---------- */
+@media print {
+  @page { margin: 14mm; }
+  body { font-size: 10pt; line-height: 1.55; color: #222; background: #fff; }
+  .wrap { max-width: none; padding: 0; }
+  a { color: #16324F; text-decoration: none; }
+  .brand-left svg, .actions, .brand-mail, .more, .btn, .home-link, .resume-note, .footer a { display: none !important; }
+  .hero { background: none; color: #16324F; padding: 0 0 14px; border-bottom: 2.5px solid #16324F; margin-bottom: 4px; }
+  .brand { margin-bottom: 14px; }
+  .brand-text strong { color: #16324F; }
+  .brand-text span { color: #555; }
+  h1 { color: #16324F; font-size: 18pt; line-height: 1.4; }
+  .sub { color: #333; font-size: 10.5pt; margin-top: 12px; }
+  .facts span { color: #333; font-size: 9.5pt; }
+  .facts strong { color: #16324F; }
+  .section { padding: 14px 0; }
+  .soft { background: none; }
+  .label { margin-bottom: 10px; }
+  .label-light .tx { color: #16324F; }
+  .lead { margin: 0 0 14px; font-size: 11pt; }
+  .stat { border-left-color: #bbb; }
+  .num { color: #16324F; font-size: 16pt; }
+  .timeline { margin-top: 20px; }
+  .timeline li { break-inside: avoid; }
+  .creds { border-top-color: #ddd; }
+  .erm-fig { break-inside: avoid; margin-top: 20px; }
+  .erm-fig figcaption { color: #555; }
+  .contact { background: none; color: #16324F; padding: 16px 0 0; border-top: 2.5px solid #16324F; }
+  .contact-lead { color: #333; margin-bottom: 8px; }
+  .email { color: #555; margin-top: 6px; }
+  .footer { border-top: 1px solid #ddd; }
+}
