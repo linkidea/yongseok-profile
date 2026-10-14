@@ -137,6 +137,27 @@ h1 {
   .erm-steps li:nth-child(odd) { border-left: none; padding-left: 0; }
 }
 
+/* ---------- 구매 자동화 도식 ---------- */
+.auto-fig { margin: 44px 0 0; }
+.auto-title { font-size: 13px; font-weight: 700; color: var(--navy); margin-bottom: 14px; letter-spacing: .02em; }
+.auto-cols { display: grid; grid-template-columns: 1fr 44px 1fr; align-items: start; }
+.auto-tag { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .08em; margin-bottom: 11px; }
+.auto-tag.before { color: #7C8697; }
+.auto-tag.after { color: var(--amber-deep); }
+.auto-list { list-style: none; }
+.auto-list li { position: relative; padding-left: 15px; font-size: 13.5px; margin-bottom: 7px; line-height: 1.6; }
+.auto-before .auto-list li { color: #7C8697; }
+.auto-before .auto-list li::before { content: ""; position: absolute; left: 0; top: .6em; width: 5px; height: 5px; border-radius: 50%; background: #C9CFDA; }
+.auto-after .auto-list li { color: var(--ink); font-weight: 500; }
+.auto-after .auto-list li::before { content: ""; position: absolute; left: 0; top: .55em; width: 6px; height: 6px; border-radius: 50%; background: var(--amber); }
+.auto-arrow { display: flex; align-items: center; justify-content: center; color: var(--amber-deep); font-size: 18px; font-weight: 700; padding-top: 24px; }
+.auto-result { margin-top: 18px; padding-top: 13px; border-top: 1px solid var(--line); font-size: 12.5px; color: var(--muted); }
+.auto-result strong { color: var(--navy); font-weight: 800; font-variant-numeric: tabular-nums; }
+@media (max-width: 760px) {
+  .auto-cols { grid-template-columns: 1fr; }
+  .auto-arrow { padding: 8px 0; justify-content: flex-start; transform: rotate(90deg); transform-origin: left center; width: 24px; height: 24px; }
+}
+
 /* ---------- 인쇄 최적화 (Ctrl+P → PDF) ---------- */
 @media print {
   @page { margin: 14mm; }
@@ -164,6 +185,8 @@ h1 {
   .creds { border-top-color: #ddd; }
   .erm-fig { break-inside: avoid; margin-top: 20px; }
   .erm-cycle { color: #555; }
+  .auto-fig { break-inside: avoid; margin-top: 22px; }
+  .auto-result { color: #555; }
   .contact { background: none; color: #16324F; padding: 16px 0 0; border-top: 2.5px solid #16324F; }
   .contact-lead { color: #333; margin-bottom: 8px; }
   .email { color: #555; margin-top: 6px; }
