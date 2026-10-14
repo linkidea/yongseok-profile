@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>강용석 · 경영지원 &amp; 리스크 — 내부감사·구매·PI 17년</title>
+<meta name="description" content="현장에서 감사까지 — 구매·PI·기획을 직접 통과한 내부감사·리스크 관리 전문가. RPA·AI 자동화로 연 7억 절감, 130억 시스템 구축 PM.">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="강용석 — 현장에서 감사까지">
+<meta property="og:description" content="구매·PI·기획을 직접 통과한 내부감사·리스크 전문가 · 연 7억 절감 자동화 · 130억 시스템 구축 PM">
+<meta property="og:locale" content="ko_KR">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%2316324F'/><rect x='6' y='22' width='4' height='4' fill='%23ffffff' opacity='.5'/><rect x='12' y='17' width='4' height='9' fill='%23ffffff' opacity='.7'/><rect x='18' y='12' width='4' height='14' fill='%23ffffff' opacity='.85'/><rect x='24' y='7' width='4' height='19' fill='%23E8A33D'/></svg>">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+@font-face {
+  font-family: 'MaruBuri';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/MaruBuri-Bold.woff') format('woff');
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'MaruBuri';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/MaruBuri-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-display: swap;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  --navy: #16324F;
+  --navy-deep: #0F2439;
+  --amber: #E8A33D;
+  --ink: #1B2531;
+  --body-c: #3C4657;
+  --muted: #6B7686;
+  --soft: #F5F7FA;
+  --line: #E4E9F0;
+  font-family: 'Pretendard Variable', Pretendard, -apple-system, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--body-c);
+  background: #FFFFFF;
+}
+.wrap { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+
+.hero { background: linear-gradient(135deg, var(--navy) 0%, var(--navy-deep) 100%); color: #fff; padding: 52px 0 60px; }
+.brand { display: flex; align-items: center; gap: 12px; margin-bottom: 34px; }
+.brand-text strong { display: block; font-size: 17px; font-weight: 700; color: #fff; line-height: 1.3; }
+.brand-text span { font-size: 12px; color: rgba(255,255,255,.65); letter-spacing: .04em; }
+h1 {
+  font-family: 'MaruBuri', 'Noto Serif KR', serif;
+  font-weight: 700;
+  font-size: clamp(26px, 4.2vw, 38px);
+  line-height: 1.38;
+  letter-spacing: -0.01em;
+  color: #fff;
+}
+.sub { margin-top: 18px; font-size: clamp(14.5px, 1.8vw, 16.5px); color: rgba(255,255,255,.85); }
+.teaser { margin-top: 10px; font-size: 13.5px; color: var(--amber); font-weight: 500; }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 12px 22px; border-radius: 10px;
+  font-size: 14.5px; font-weight: 700; text-decoration: none; line-height: 1.3;
+}
+.btn-amber { background: var(--amber); color: var(--navy-deep); }
+.btn-ghost { border: 1.5px solid rgba(255,255,255,.55); color: #fff; }
+
+.section { padding: 54px 0; }
+.soft { background: var(--soft); }
+.label { font-size: 12.5px; font-weight: 700; letter-spacing: .14em; color: var(--navy); text-transform: uppercase; margin-bottom: 20px; }
+.label-light { color: var(--amber); }
+
+.work-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.work-grid article { background: var(--soft); border-radius: 12px; padding: 22px 20px; }
+.work-grid h3 { font-size: 16.5px; font-weight: 700; color: var(--navy); margin-bottom: 7px; }
+.work-grid p { font-size: 14px; }
+.more { display: inline-block; margin-top: 18px; font-size: 13.5px; font-weight: 700; color: var(--navy); text-decoration: none; border-bottom: 1.5px solid var(--amber); padding-bottom: 2px; }
+
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.stat { background: #fff; border: 1px solid var(--line); border-top: 3px solid var(--amber); border-radius: 10px; padding: 16px 15px; display: flex; flex-direction: column; gap: 5px; }
+.num { font-size: 24px; font-weight: 800; color: var(--navy); font-variant-numeric: tabular-nums; line-height: 1.2; }
+.stat-label { font-size: 12.5px; color: var(--ink); font-weight: 500; }
+.period { font-size: 11.5px; color: var(--muted); }
+
+.timeline { list-style: none; margin-top: 30px; }
+.timeline li { display: grid; grid-template-columns: 110px 1fr; gap: 14px; padding: 13px 0; border-bottom: 1px solid var(--line); }
+.timeline li:last-child { border-bottom: none; }
+.year { font-size: 13.5px; font-weight: 700; color: var(--navy); font-variant-numeric: tabular-nums; padding-top: 1px; }
+.timeline strong { display: block; font-size: 15px; color: var(--ink); }
+.timeline div > span { font-size: 13.5px; color: var(--muted); }
+.creds { margin-top: 26px; font-size: 13.5px; font-weight: 500; color: var(--ink); }
+.resume-note { margin-top: 8px; font-size: 13px; color: var(--muted); }
+.resume-note a { color: var(--navy); font-weight: 700; text-decoration: none; border-bottom: 1.5px solid var(--amber); padding-bottom: 1px; }
+
+.contact { background: linear-gradient(135deg, var(--navy) 0%, var(--navy-deep) 100%); color: #fff; padding: 54px 0 58px; }
+.contact-lead { font-size: clamp(16px, 2vw, 19px); font-weight: 500; color: rgba(255,255,255,.92); max-width: 560px; margin-bottom: 24px; }
+.email { margin-top: 14px; font-size: 13px; color: rgba(255,255,255,.6); }
+
+.footer { background: var(--soft); padding: 16px 0; text-align: center; font-size: 12px; color: var(--muted); }
+
+@media (max-width: 760px) {
+  .work-grid { grid-template-columns: 1fr; }
+  .stats { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 480px) {
+  .actions .btn { width: 100%; }
+  .timeline li { grid-template-columns: 1fr; gap: 3px; }
+  .stat { padding: 14px 12px; }
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="brand">
+      <svg width="34" height="26" viewBox="0 0 34 26" aria-hidden="true">
+        <rect x="0" y="21" width="5" height="5" fill="rgba(255,255,255,.45)"/>
+        <rect x="7" y="16" width="5" height="10" fill="rgba(255,255,255,.6)"/>
+        <rect x="14" y="11" width="5" height="15" fill="rgba(255,255,255,.78)"/>
+        <rect x="21" y="6" width="5" height="20" fill="rgba(255,255,255,.92)"/>
+        <path d="M28 6 L31 .8 L34 6 Z" fill="#E8A33D"/>
+        <rect x="28" y="6" width="6" height="20" fill="#E8A33D"/>
+      </svg>
+      <div class="brand-text">
+        <strong>강용석</strong>
+        <span>KANG YONG-SEOK · 경영지원 &amp; 리스크</span>
+      </div>
+    </div>
+    <h1>현장에서 감사까지 —<br>구매·PI·기획을 직접 통과한 눈으로 리스크를 잡는 사람</h1>
+    <p class="sub">구매·기획·감사를 한 사람으로 — 17년차 경영지원 멀티 플레이어, DL그룹 ㈜대림 진단/감사 파트리더</p>
+    <p class="teaser">RPA·AI 자동화로 연 7억 절감 · 130억 시스템 구축 PM · 2024년 인사평가 S등급</p>
+    <div class="actions">
+      <a class="btn btn-amber" href="#evidence">핵심 경력 한 장 보기</a>
+      <a class="btn btn-ghost" href="mailto:fwipace@naver.com">바로 연락하기</a>
+    </div>
+  </div>
+</header>
+
+<section class="section" id="work">
+  <div class="wrap">
+    <p class="label">무엇을 하나</p>
+    <div class="work-grid">
+      <article>
+        <h3>리스크를 선제 차단</h3>
+        <p>전사 ERM 체계를 수립·운영하고 7개 사업부·자회사 정기 진단으로 잠재 손실을 사전에 잡습니다.</p>
+      </article>
+      <article>
+        <h3>절감을 시스템으로 남깁니다</h3>
+        <p>RPA·AI 자동화로 연 7억 절감, 데이터 기반 발주 전략으로 외주비 23%를 줄였습니다.</p>
+      </article>
+      <article>
+        <h3>변화를 끝까지 이행합니다</h3>
+        <p>130억 PI 프로젝트 구매 영역 PM(15명 리딩)과 분할·지분변경 후 PMI를 주도했습니다.</p>
+      </article>
+    </div>
+    <a class="more" href="#evidence">어떻게 했는지 ↓</a>
+  </div>
+</section>
+
+<section class="section soft" id="evidence">
+  <div class="wrap">
+    <p class="label">증거 — 숫자와 경로</p>
+    <div class="stats">
+      <div class="stat">
+        <span class="num">7억 원</span>
+        <span class="stat-label">연간 비용 절감 · 구매 자동화</span>
+        <span class="period">2018–2020 · 전 소속사</span>
+      </div>
+      <div class="stat">
+        <span class="num">23%</span>
+        <span class="stat-label">외주비 절감 · 통합 발주 전략</span>
+        <span class="period">2018–2020 · 전 소속사</span>
+      </div>
+      <div class="stat">
+        <span class="num">130억 원</span>
+        <span class="stat-label">규모 시스템 구축 · 구매 영역 PM</span>
+        <span class="period">2016–2017</span>
+      </div>
+      <div class="stat">
+        <span class="num">40%</span>
+        <span class="stat-label">신용평가 건당 소요시간 축소 · 자동화 전환</span>
+        <span class="period">2025 · 현재</span>
+      </div>
+    </div>
+    <ol class="timeline">
+      <li>
+        <span class="year">2009–2012</span>
+        <div><strong>현장 공무</strong><span>건설 현장 공무·원가 관리, 업무개선 표창 3회</span></div>
+      </li>
+      <li>
+        <span class="year">2013–2015</span>
+        <div><strong>본사 구매</strong><span>시설공사 예정가·입찰·계약 실무</span></div>
+      </li>
+      <li>
+        <span class="year">2016–2017</span>
+        <div><strong>PI 시스템 PM</strong><span>130억 차세대 시스템, 구매 영역 리딩</span></div>
+      </li>
+      <li>
+        <span class="year">2018–2022</span>
+        <div><strong>구매기획 · 전략기획</strong><span>RPA·AI 자동화 확산, Bain 컨설팅 PMO, PMI 주도</span></div>
+      </li>
+      <li>
+        <span class="year">2022–현재</span>
+        <div><strong>진단/감사</strong><span>DL그룹 ㈜대림, 전사 ERM과 정기 진단 운영</span></div>
+      </li>
+    </ol>
+    <p class="creds">CPSM(국제공인구매전문가) · LG MBA · LG 구매전문가 · HPI 선발 · 2024년 인사평가 S등급</p>
+    <p class="resume-note">전체 이력서는 PDF로 요청 시 제공합니다 — <a href="mailto:fwipace@naver.com?subject=%EC%9D%B4%EB%A0%A5%EC%84%9C%20%EC%9A%94%EC%B2%AD">이메일로 요청하기</a></p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <p class="label label-light">연락</p>
+    <p class="contact-lead">내부감사·리스크 관리 리더 포지션과, 구매·기획을 아우르는 경영관리 역할에 관심이 있습니다. 메일은 하루 안에 답장드립니다.</p>
+    <a class="btn btn-amber" href="mailto:fwipace@naver.com">이메일 보내기</a>
+    <p class="email">fwipace@naver.com</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">강용석 · 경영지원 &amp; 리스크 · 2026</div>
+</footer>
+
+</body>
+</html>
