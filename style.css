@@ -28,6 +28,7 @@ body {
   color: var(--body-c);
   background: #FFFFFF;
   -webkit-font-smoothing: antialiased;
+  word-break: keep-all;
 }
 .wrap { max-width: 880px; margin: 0 auto; padding: 0 28px; }
 
@@ -45,6 +46,7 @@ h1 {
   line-height: 1.42;
   letter-spacing: -0.005em;
   color: #fff;
+  text-wrap: balance;
 }
 .sub { margin-top: 20px; font-size: clamp(14.5px, 1.8vw, 16.5px); color: rgba(255,255,255,.85); }
 .facts { display: flex; flex-wrap: wrap; row-gap: 6px; margin-top: 18px; }
@@ -98,7 +100,7 @@ h1 {
 .resume-note a { color: var(--navy); font-weight: 700; text-decoration: none; border-bottom: 1.5px solid var(--amber); padding-bottom: 1px; }
 
 .contact { background: linear-gradient(140deg, var(--navy) 0%, var(--navy-deep) 100%); color: #fff; padding: 60px 0 64px; }
-.contact-lead { font-size: clamp(16px, 2vw, 19px); font-weight: 500; color: rgba(255,255,255,.92); max-width: 580px; margin-bottom: 28px; line-height: 1.6; letter-spacing: -.005em; }
+.contact-lead { font-size: clamp(16px, 2vw, 19px); font-weight: 500; color: rgba(255,255,255,.92); max-width: 580px; margin-bottom: 28px; line-height: 1.6; letter-spacing: -.005em; text-wrap: pretty; }
 .email { margin-top: 16px; font-size: 13px; color: rgba(255,255,255,.6); letter-spacing: .02em; }
 
 .footer { padding: 20px 0; border-top: 1px solid var(--line); text-align: center; font-size: 12px; color: var(--muted); letter-spacing: .02em; }
