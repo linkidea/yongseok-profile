@@ -45,13 +45,16 @@
 .faq-item h3 { font-size: 14.5px; font-weight: 700; color: var(--ink); margin-bottom: 6px; }
 .faq-item h3::before { content: "Q. "; color: var(--amber-deep); }
 .faq-item p { font-size: 13.5px; }
-.award-fig, .cert-fig { margin-top: 28px; }
-.award-fig a, .cert-fig a { display: block; }
-.award-fig img, .cert-fig img { display: block; width: 100%; max-width: 460px; border-radius: 10px; }
-.award-fig figcaption, .cert-fig figcaption { margin-top: 9px; font-size: 12.5px; color: var(--muted); max-width: 460px; }
+.award-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 28px; align-items: start; }
+.award-fig { margin-top: 28px; }
+.award-photos .award-fig { margin-top: 0; }
+.award-fig a { display: block; }
+.award-fig img { display: block; width: 100%; max-width: 460px; border-radius: 10px; aspect-ratio: 3 / 2; object-fit: cover; }
+.award-fig figcaption { margin-top: 9px; font-size: 12.5px; color: var(--muted); max-width: 460px; }
 @media (max-width: 760px) {
   .two-col { grid-template-columns: 1fr; gap: 26px; }
   .company-head { gap: 4px 12px; }
+  .award-photos { grid-template-columns: 1fr; gap: 22px; }
 }
 @media print {
   .cv-hero { padding: 0 0 16px; margin-bottom: 4px; }
@@ -62,8 +65,8 @@
   .company-head { border-bottom-color: #16324F; }
   .role { break-inside: avoid; }
   .faq-item { break-inside: avoid; }
-  .award-fig, .cert-fig { break-inside: avoid; }
-  .award-fig img, .cert-fig img { max-width: 320px; }
+  .award-photos { break-inside: avoid; }
+  .award-photos img { max-width: 320px; }
 }
 </style>
 </head>
@@ -201,10 +204,6 @@
         </ul>
       </div>
     </div>
-    <figure class="cert-fig">
-      <a href="cpsm-certificate.jpg" target="_blank" rel="noopener"><img src="cpsm-certificate.jpg" alt="CPSM 국제공인구매전문가 자격증 (ISM 발급)" loading="lazy"></a>
-      <figcaption>CPSM(국제공인구매전문가) 자격증 — ISM, 2019 취득 · 2025 갱신</figcaption>
-    </figure>
   </div>
 </section>
 
@@ -229,10 +228,16 @@
         </ul>
       </div>
     </div>
-    <figure class="award-fig">
-      <a href="awards-2022.jpg" target="_blank" rel="noopener"><img src="awards-2022.jpg" alt="2022 부동산서비스산업 창업경진대회 시상식에서 상장과 트로피를 들고 있는 모습" loading="lazy"></a>
-      <figcaption>2022 부동산서비스산업 창업경진대회 시상식 — 부동산산업 경진대회 우수상 수상 (한국부동산원, 2022.08)</figcaption>
-    </figure>
+    <div class="award-photos">
+      <figure class="award-fig">
+        <a href="cpsm-certificate.jpg" target="_blank" rel="noopener"><img src="cpsm-certificate.jpg" alt="CPSM 국제공인구매전문가 자격증 (ISM 발급)" loading="lazy"></a>
+        <figcaption>CPSM 자격증 — ISM, 2019 취득 · 2025 갱신</figcaption>
+      </figure>
+      <figure class="award-fig">
+        <a href="awards-2022.jpg" target="_blank" rel="noopener"><img src="awards-2022.jpg" alt="2022 부동산서비스산업 창업경진대회 시상식에서 상장과 트로피를 들고 있는 모습" loading="lazy"></a>
+        <figcaption>부동산서비스산업 창업경진대회 시상식 — 우수상 수상 (한국부동산원, 2022.08)</figcaption>
+      </figure>
+    </div>
   </div>
 </section>
 

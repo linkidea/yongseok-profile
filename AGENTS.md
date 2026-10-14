@@ -31,7 +31,7 @@
 | `style.css` | 두 페이지 공유 스타일. **공통 수정은 여기서** |
 | `og-image.png` | 카톡·링크드인 공유 썸네일 1200×630 |
 | `awards-2022.jpg` | 수상 사진 (2022 부동산서비스산업 창업경진대회 시상식) — 시상자 얼굴 블러 처리본. 재가공: `tools/edit_award_photo.py` (원본은 사용자 보관, 이 폴더에 원본 두지 말 것) |
-| `cpsm-certificate.jpg` | CPSM 자격증 이미지 (2019 ISM 발급본). 등록번호·발급일·만료일 블록 제거 가공본 — 2025 갱신 완료(사용자 확인)이나 갱신 증서 미보유라 구 증서 사용 중. 재가공: `tools/edit_cpsm_photo.py`. 갱신 증서 입수 시 교체할 것 |
+| `cpsm-certificate.jpg` | CPSM 자격증 이미지 (2019 ISM 발급본). 등록번호·발급일·만료일 블록 제거 가공본 — 2025 갱신 완료(사용자 확인)이나 갱신 증서 미보유라 구 증서 사용 중. 재가공: `tools/edit_cpsm_photo.py`. 갱신 증서 입수 시 교체할 것. 현재 위치: 수상·프로그램 저작권 등록(04) 섹션, 시상식 사진 좌측 |
 | `tools/make_og.py` | OG 이미지 생성 스크립트 (`python tools/make_og.py`, Pillow 필요) |
 
 - 페이지 전용 스타일은 각 HTML의 `<style>` 블록에 있다(career의 `.cv-*`, 인쇄 보정 등).
