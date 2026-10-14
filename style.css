@@ -52,7 +52,10 @@ h1 {
 .facts { display: flex; flex-wrap: wrap; row-gap: 6px; margin-top: 18px; }
 .facts span { font-size: 13px; color: var(--amber); font-weight: 500; }
 .facts strong { color: rgba(255,255,255,.6); font-weight: 600; margin-right: 8px; letter-spacing: .06em; font-size: 12px; }
-.facts span + span::before { content: "·"; margin: 0 10px; color: rgba(255,255,255,.35); font-weight: 400; }
+.facts span + span::before { content: none; }
+.facts span::after { content: "·"; margin: 0 10px; color: rgba(255,255,255,.35); font-weight: 400; }
+.facts span:last-child::after { content: none; }
+@media (min-width: 761px) { h1 .nb { white-space: nowrap; } }
 .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px; }
 .hero-grid { display: grid; grid-template-columns: 1fr 250px; gap: 44px; align-items: center; }
 .hero-photo img { display: block; width: 100%; border-radius: 18px; box-shadow: 0 14px 36px rgba(0, 0, 0, .28); }
@@ -118,7 +121,7 @@ h1 {
   .hero-photo img { border-radius: 12px; }
   .sub { margin-top: 14px; }
   .facts { flex-direction: column; gap: 3px; margin-top: 12px; }
-  .facts span + span::before { content: none; }
+  .facts span::after { content: none; }
   .actions { margin-top: 22px; }
   .work-grid { grid-template-columns: 1fr; gap: 26px; }
   .stats { grid-template-columns: 1fr 1fr; row-gap: 24px; }

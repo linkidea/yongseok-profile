@@ -21,6 +21,7 @@
 - 배포 확인: `curl -s -L https://linkidea.github.io/yongseok-profile/ | grep "확인할 문구"`
   - push 직후엔 이전 버전이 보일 수 있음(20초 간격 재시도).
   - CSS가 예전 버전으로 보이면 `?v=2` 같은 쿼리로 재확인(CDN/브라우저 캐시).
+  - **style.css를 수정하면 두 HTML의 `style.css?v=` 숫자를 올려서 커밋할 것** (브라우저 캐시 우회).
 
 ## 3. 파일 구성
 
