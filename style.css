@@ -111,9 +111,15 @@ h1 {
 
 @media (max-width: 760px) {
   .wrap { padding: 0 22px; }
-  .hero-grid { grid-template-columns: 1fr; gap: 28px; }
-  .hero-photo { order: -1; max-width: 150px; margin: 0 auto; }
-  .hero-photo img { border-radius: 14px; }
+  .hero { padding: 40px 0 44px; }
+  .brand { margin-bottom: 24px; }
+  .hero-grid { grid-template-columns: 1fr; gap: 20px; }
+  .hero-photo { order: -1; max-width: 104px; margin: 0 auto; }
+  .hero-photo img { border-radius: 12px; }
+  .sub { margin-top: 14px; }
+  .facts { flex-direction: column; gap: 3px; margin-top: 12px; }
+  .facts span + span::before { content: none; }
+  .actions { margin-top: 22px; }
   .work-grid { grid-template-columns: 1fr; gap: 26px; }
   .stats { grid-template-columns: 1fr 1fr; row-gap: 24px; }
   .stat { padding-left: 18px; }
