@@ -121,13 +121,21 @@ h1 {
   .num { font-size: 24px; }
 }
 
-/* ---------- ERM 다이어그램 ---------- */
-.erm-fig { margin: 38px 0 0; }
-.erm-fig svg { display: block; width: 100%; max-width: 720px; height: auto; }
-.erm-fig text { font-family: 'Pretendard Variable', Pretendard, -apple-system, 'Apple SD Gothic Neo', sans-serif; }
-.erm-fig .erm-no { font-size: 14px; font-weight: 700; letter-spacing: 1.5px; fill: var(--amber-deep); }
-.erm-fig .erm-tx { font-size: 21px; font-weight: 700; fill: var(--navy); }
-.erm-fig figcaption { margin-top: 10px; font-size: 12.5px; color: var(--muted); }
+/* ---------- ERM 프로세스 ---------- */
+.erm-fig { margin: 42px 0 0; }
+.erm-title { font-size: 13px; font-weight: 700; color: var(--navy); margin-bottom: 14px; letter-spacing: .02em; }
+.erm-steps { list-style: none; display: grid; grid-template-columns: repeat(4, 1fr); }
+.erm-steps li { padding: 0 20px; border-left: 1px solid var(--line); }
+.erm-steps li:first-child { border-left: none; padding-left: 0; }
+.erm-no { display: block; font-size: 11px; font-weight: 800; color: var(--amber-deep); letter-spacing: .1em; font-variant-numeric: tabular-nums; margin-bottom: 7px; }
+.erm-steps strong { display: block; font-size: 15px; font-weight: 700; color: var(--navy); margin-bottom: 4px; letter-spacing: -.005em; }
+.erm-desc { display: block; font-size: 12.5px; color: var(--muted); line-height: 1.55; }
+.erm-cycle { margin-top: 18px; padding-top: 13px; border-top: 1px solid var(--line); font-size: 12.5px; color: var(--muted); }
+@media (max-width: 760px) {
+  .erm-steps { grid-template-columns: 1fr 1fr; row-gap: 20px; }
+  .erm-steps li { padding-left: 18px; }
+  .erm-steps li:nth-child(odd) { border-left: none; padding-left: 0; }
+}
 
 /* ---------- 인쇄 최적화 (Ctrl+P → PDF) ---------- */
 @media print {
@@ -155,7 +163,7 @@ h1 {
   .timeline li { break-inside: avoid; }
   .creds { border-top-color: #ddd; }
   .erm-fig { break-inside: avoid; margin-top: 20px; }
-  .erm-fig figcaption { color: #555; }
+  .erm-cycle { color: #555; }
   .contact { background: none; color: #16324F; padding: 16px 0 0; border-top: 2.5px solid #16324F; }
   .contact-lead { color: #333; margin-bottom: 8px; }
   .email { color: #555; margin-top: 6px; }
