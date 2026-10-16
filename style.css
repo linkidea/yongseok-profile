@@ -87,9 +87,9 @@ h1 {
 .more { display: inline-block; margin-top: 30px; font-size: 13.5px; font-weight: 700; color: var(--navy); text-decoration: none; border-bottom: 1.5px solid var(--amber); padding-bottom: 2px; }
 
 .lead { font-size: clamp(15.5px, 1.9vw, 17px); font-weight: 600; color: var(--ink); margin: -8px 0 30px; letter-spacing: -.005em; }
-.stats { display: grid; grid-template-columns: repeat(4, 1fr); }
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); row-gap: 28px; }
 .stat { padding: 2px 22px; border-left: 1px solid var(--line); }
-.stat:first-child { border-left: none; padding-left: 0; }
+.stat:nth-child(3n+1) { border-left: none; padding-left: 0; }
 .num { display: block; font-size: 27px; font-weight: 800; color: var(--navy); font-variant-numeric: tabular-nums; line-height: 1.25; letter-spacing: -.01em; }
 .stat-label { display: block; font-size: 12.5px; color: var(--ink); font-weight: 600; margin-top: 6px; }
 .period { display: block; font-size: 11.5px; color: var(--muted); margin-top: 3px; font-variant-numeric: tabular-nums; }
@@ -126,6 +126,7 @@ h1 {
   .work-grid { grid-template-columns: 1fr; gap: 26px; }
   .stats { grid-template-columns: 1fr 1fr; row-gap: 24px; }
   .stat { padding-left: 18px; }
+  .stat:nth-child(3n+1) { border-left: 1px solid var(--line); padding-left: 18px; }
   .stat:nth-child(odd) { border-left: none; padding-left: 0; }
 }
 @media (max-width: 480px) {
@@ -192,6 +193,7 @@ h1 {
   .label { margin-bottom: 10px; }
   .label-light .tx { color: #16324F; }
   .lead { margin: 0 0 14px; font-size: 11pt; }
+  .stats { row-gap: 14px; }
   .stat { border-left-color: #bbb; }
   .num { color: #16324F; font-size: 16pt; }
   .timeline { margin-top: 20px; }
