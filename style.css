@@ -102,8 +102,10 @@ h1 {
 .year { font-size: 13.5px; font-weight: 700; color: var(--navy); font-variant-numeric: tabular-nums; padding-top: 1px; letter-spacing: .01em; }
 .timeline strong { display: block; font-size: 15px; color: var(--ink); letter-spacing: -.005em; }
 .timeline div > span { font-size: 13.5px; color: var(--muted); }
-.creds { margin-top: 30px; padding-top: 22px; border-top: 1px solid var(--line); font-size: 13.5px; font-weight: 600; color: var(--ink); }
-.creds-sub { margin-top: 6px; font-size: 13px; color: var(--muted); font-weight: 500; }
+.creds { margin-top: 30px; padding-top: 22px; border-top: 1px solid var(--line); }
+.creds p { font-size: 13.5px; color: var(--body-c); }
+.creds p + p { margin-top: 6px; }
+.creds strong { color: var(--navy); font-weight: 700; font-size: 12px; letter-spacing: .06em; margin-right: 9px; }
 .resume-note { margin-top: 14px; font-size: 13px; color: var(--muted); }
 .resume-note a { color: var(--navy); font-weight: 700; text-decoration: none; border-bottom: 1.5px solid var(--amber); padding-bottom: 1px; }
 
