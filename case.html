@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#16324F">
+<title>케이스 — 신용평가 자동화 (건당 5분→3분) | 강용석</title>
+<meta name="description" content="100% 수작업이던 거래업체 신용평가 정보 수집을 자체 개발 시스템으로 전환해 건당 소요시간을 40% 단축하고, 외부 데이터 제약도 직접 해소한 케이스 스터디.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="케이스 스터디 — 신용평가 자동화 | 강용석">
+<meta property="og:description" content="100% 수작업을 자동화로 전환, 건당 5분을 3분으로 — 목표(15%)를 초과한 40% 단축.">
+<meta property="og:locale" content="ko_KR">
+<link rel="canonical" href="https://linkidea.github.io/yongseok-profile/case.html">
+<meta property="og:url" content="https://linkidea.github.io/yongseok-profile/case.html">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%2316324F'/><rect x='6' y='22' width='4' height='4' fill='%23ffffff' opacity='.5'/><rect x='12' y='17' width='4' height='9' fill='%23ffffff' opacity='.7'/><rect x='18' y='12' width='4' height='14' fill='%23ffffff' opacity='.85'/><rect x='24' y='7' width='4' height='19' fill='%23E8A33D'/></svg>">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="style.css?v=9">
+<style>
+.cv-hero { padding: 40px 0 46px; }
+.cv-hero h1 { font-size: clamp(22px, 3.2vw, 31px); line-height: 1.42; }
+.cv-hero .sub { margin-top: 12px; font-size: 14px; max-width: 640px; }
+.case-kicker { font-size: 12px; font-weight: 700; color: var(--amber); letter-spacing: .18em; margin-bottom: 14px; }
+.home-link { color: rgba(255,255,255,.75); font-size: 13.5px; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.3); padding-bottom: 2px; white-space: nowrap; }
+.home-link:hover { color: #fff; }
+button.home-link { background: none; border: none; cursor: pointer; font: inherit; padding: 0 0 2px; }
+.hero-links { display: flex; align-items: center; gap: 15px; }
+.cv-list { list-style: none; }
+.cv-list li { position: relative; padding-left: 15px; font-size: 14px; margin-bottom: 9px; line-height: 1.7; }
+.cv-list li::before { content: ""; position: absolute; left: 0; top: .62em; width: 5px; height: 5px; border-radius: 50%; background: var(--amber); }
+.cv-list strong { color: var(--navy); font-weight: 700; }
+.case-stats { grid-template-columns: repeat(3, 1fr); }
+.case-steps { margin-top: 0; }
+.case-note { margin-top: 26px; font-size: 13px; color: var(--muted); }
+.case-note a { color: var(--navy); font-weight: 700; text-decoration: none; border-bottom: 1.5px solid var(--amber); padding-bottom: 1px; }
+@media (max-width: 760px) {
+  .case-stats { grid-template-columns: 1fr 1fr; row-gap: 24px; }
+  .case-stats .stat:nth-child(3) { grid-column: 1 / -1; border-left: none; padding-left: 0; }
+}
+@media print {
+  .cv-hero { padding: 0 0 16px; margin-bottom: 4px; }
+  .cv-hero h1 { font-size: 17pt; color: #16324F; }
+  .cv-hero .sub { color: #333; }
+  .case-kicker { color: #9A6210; }
+  .cv-list li { break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+
+<header class="hero cv-hero">
+  <div class="wrap">
+    <div class="brand">
+      <div class="brand-left">
+        <svg width="34" height="26" viewBox="0 0 34 26" aria-hidden="true">
+          <rect x="0" y="21" width="5" height="5" fill="rgba(255,255,255,.45)"/>
+          <rect x="7" y="16" width="5" height="10" fill="rgba(255,255,255,.6)"/>
+          <rect x="14" y="11" width="5" height="15" fill="rgba(255,255,255,.78)"/>
+          <rect x="21" y="6" width="5" height="20" fill="rgba(255,255,255,.92)"/>
+          <path d="M28 6 L31 .8 L34 6 Z" fill="#E8A33D"/>
+          <rect x="28" y="6" width="6" height="20" fill="#E8A33D"/>
+        </svg>
+        <div class="brand-text">
+          <strong>강용석</strong>
+          <span>KANG YONG-SEOK</span>
+        </div>
+      </div>
+      <div class="hero-links">
+        <a class="home-link" href="index.html">← 프로필 홈</a>
+        <a class="home-link" href="career.html">← 경력 상세</a>
+      </div>
+    </div>
+    <p class="case-kicker">CASE STUDY · 신용평가 자동화</p>
+    <h1>100% 수작업을 자동화로,<br>건당 5분을 3분으로</h1>
+    <p class="sub">거래업체 재무·주주·거래처 정보 수집을 자체 개발 시스템으로 전환하고, 운영 중 외부 제약도 직접 풀어 성과를 지속시킨 사례</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+    <h2 class="label"><span class="no">01</span><span class="tx">배경 — 문제</span></h2>
+    <p class="lead">진단·감사에 필요한 거래업체 신용 정보가 전량 수작업이었습니다.</p>
+    <ul class="cv-list">
+      <li><strong>수집 항목</strong> — 거래업체 재무정보, 주주·지분구조, 거래처 비중 정보를 건별로 조회</li>
+      <li><strong>수집 방식</strong> — 정보 사이트 조회 → 화면 확인 → 수기 정리. 건당 5분 소요</li>
+      <li><strong>구조적 문제</strong> — 반복 노동과 오류 여지가 상존하고, 담당자의 분석 시간을 잠식</li>
+      <li><strong>개선 출발</strong> — 생산성 개선 후보 5개 과제 중 '신용평가 정보 추출 자동화'를 선정, 목표는 건당 소요시간 15% 이상 단축</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section soft">
+  <div class="wrap">
+    <h2 class="label"><span class="no">02</span><span class="tx">접근 — 어떻게</span></h2>
+    <figure class="erm-fig erm-fig--audit case-steps">
+      <ol class="erm-steps">
+        <li>
+          <span class="erm-no">01</span>
+          <strong>분해</strong>
+          <span class="erm-desc">수집 항목·경로를 재무·주주·거래처 유형으로 표준화</span>
+        </li>
+        <li>
+          <span class="erm-no">02</span>
+          <strong>개발</strong>
+          <span class="erm-desc">추출·가공 로직 자체 설계·개발, AI 활용 데이터 처리</span>
+        </li>
+        <li>
+          <span class="erm-no">03</span>
+          <strong>시운영</strong>
+          <span class="erm-desc">실제 평가 건에 적용하고 예외 상황을 보완</span>
+        </li>
+        <li>
+          <span class="erm-no">04</span>
+          <strong>재구축</strong>
+          <span class="erm-desc">정보 제공처 데이터 제약 발생, 우회 로직 재개발로 해소</span>
+        </li>
+      </ol>
+      <p class="erm-cycle">↻ 개발으로 끝내지 않고, 운영 중 제약까지 직접 풀어 성과를 지속시켰습니다.</p>
+    </figure>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2 class="label"><span class="no">03</span><span class="tx">결과 — 숫자로</span></h2>
+    <div class="stats case-stats">
+      <div class="stat">
+        <span class="num">5분 → 3분</span>
+        <span class="stat-label">건당 소요시간 · 정보 수집</span>
+      </div>
+      <div class="stat">
+        <span class="num">40% 단축</span>
+        <span class="stat-label">목표(15% 이상)를 초과한 결과</span>
+      </div>
+      <div class="stat">
+        <span class="num">100% 자동화</span>
+        <span class="stat-label">수작업 프로세스 전환 · 수집 DB화</span>
+      </div>
+    </div>
+    <figure class="auto-fig">
+      <p class="auto-title">수집 프로세스 — BEFORE / AFTER</p>
+      <div class="auto-cols">
+        <div class="auto-before">
+          <span class="auto-tag before">BEFORE · 수작업</span>
+          <ul class="auto-list">
+            <li>건별 사이트 조회·검색</li>
+            <li>화면 확인 후 수기 정리</li>
+            <li>건당 5분, 반복 노동 지속</li>
+          </ul>
+        </div>
+        <div class="auto-arrow" aria-hidden="true">→</div>
+        <div class="auto-after">
+          <span class="auto-tag after">AFTER · 자동화</span>
+          <ul class="auto-list">
+            <li>재무·주주·거래처 정보 자동 수집</li>
+            <li>수집 이력 DB화, 예외 자동 검증</li>
+            <li>건당 3분, 분석 중심 업무로 전환</li>
+          </ul>
+        </div>
+      </div>
+      <p class="auto-result">자동화 이후 — 건당 소요시간 <strong>40% 축소</strong>, 확보한 시간은 기획·분석 등 고부가가치 업무에 투입</p>
+    </figure>
+  </div>
+</section>
+
+<section class="section soft">
+  <div class="wrap">
+    <h2 class="label"><span class="no">04</span><span class="tx">이 사례가 보여주는 것</span></h2>
+    <ul class="cv-list">
+      <li><strong>검증 범위의 확대</strong> — 반복 수집·비교를 시스템에 맡기고, 사람은 이상징후 해석에 집중합니다. 자동화의 본질은 절감이 아니라 검증 범위의 확대입니다.</li>
+      <li><strong>접근의 확장</strong> — 같은 접근을 거래처 이상징후 자동 탐지 로직으로 발전시켰습니다.</li>
+      <li><strong>결과의 지속성</strong> — 운영 중 외부 데이터 제약은 기다리지 않고 우회 로직을 직접 재개발해 해소했습니다.</li>
+    </ul>
+    <p class="case-note">이 사례의 위치와 나머지 경력은 <a href="career.html">경력 상세 페이지</a>에서 확인하실 수 있습니다.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap"><a href="index.html">← 프로필 홈으로</a> · 강용석 · 내부감사·리스크 · 2026</div>
+</footer>
+
+</body>
+</html>
