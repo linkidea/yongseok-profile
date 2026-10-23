@@ -71,6 +71,7 @@ h1 {
 .btn-amber:hover { background: var(--amber-deep); color: var(--navy-deep); }
 .btn-ghost { border: 1.5px solid rgba(255,255,255,.5); color: #fff; }
 .btn-ghost:hover { border-color: rgba(255,255,255,.9); }
+button.btn { background: none; cursor: pointer; font: inherit; }
 
 .section { padding: 64px 0; }
 .soft { background: var(--soft); }
