@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#16324F">
+<title>케이스 스터디 — 강용석 | 내부감사·리스크·구매·PI</title>
+<meta name="description" content="예방형 리스크 체계, 전사 구매 시스템, 신용평가 자동화 — 강용석의 실무 케이스 스터디. 문제 → 접근 → 결과 → 시사점으로 정리했습니다.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="케이스 스터디 — 강용석">
+<meta property="og:description" content="문제 → 접근 → 결과 → 시사점. 숫자 뒤의 구조를 정리한 케이스 스터디.">
+<meta property="og:locale" content="ko_KR">
+<link rel="canonical" href="https://linkidea.github.io/yongseok-profile/cases.html">
+<meta property="og:url" content="https://linkidea.github.io/yongseok-profile/cases.html">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CollectionPage","name":"케이스 스터디 — 강용석","description":"예방형 리스크 체계, 전사 구매 시스템, 경영진단 방법론, 신용평가 자동화 — 강용석의 실무 케이스 스터디.","url":"https://linkidea.github.io/yongseok-profile/cases.html","hasPart":[{"@type":"Article","name":"리스크를 개인의 경험이 아니라, 전사의 언어로 — 예방형 리스크 체계","url":"https://linkidea.github.io/yongseok-profile/case-risk.html"},{"@type":"Article","name":"구매를 개인의 경험에서, 데이터가 남는 구조로 — 전사 구매 시스템","url":"https://linkidea.github.io/yongseok-profile/case-purchase.html"},{"@type":"Article","name":"진단을, 반복 가능한 체계로 — 경영진단 방법론","url":"https://linkidea.github.io/yongseok-profile/case-diagnosis.html"},{"@type":"Article","name":"100% 수작업을 자동화로, 건당 5분을 3분으로 — 신용평가 자동화","url":"https://linkidea.github.io/yongseok-profile/case.html"}]}
+</script>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%2316324F'/><rect x='6' y='22' width='4' height='4' fill='%23ffffff' opacity='.5'/><rect x='12' y='17' width='4' height='9' fill='%23ffffff' opacity='.7'/><rect x='18' y='12' width='4' height='14' fill='%23ffffff' opacity='.85'/><rect x='24' y='7' width='4' height='19' fill='%23E8A33D'/></svg>">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="style.css?v=11">
+<style>
+.cv-hero { padding: 40px 0 46px; }
+.cv-hero h1 { font-size: clamp(24px, 3.4vw, 33px); line-height: 1.4; }
+.cv-hero .sub { margin-top: 12px; font-size: 14.5px; max-width: 620px; text-wrap: balance; }
+.case-kicker { font-size: 12px; font-weight: 700; color: var(--amber); letter-spacing: .18em; margin-bottom: 14px; }
+.home-link { color: rgba(255,255,255,.75); font-size: 13.5px; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.3); padding-bottom: 2px; white-space: nowrap; }
+.home-link:hover { color: #fff; }
+.hero-links { display: flex; align-items: center; gap: 15px; flex-wrap: wrap; }
+.case-index { display: grid; gap: 18px; }
+.case-card { display: block; padding: 24px 26px; border: 1px solid var(--line); border-radius: 14px; text-decoration: none; color: inherit; background: #fff; transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease; }
+.case-card:hover { border-color: var(--amber); box-shadow: 0 10px 28px rgba(22,50,79,.08); transform: translateY(-2px); }
+.case-head { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
+.case-no { font-size: 11px; font-weight: 800; color: var(--amber-ink); letter-spacing: .12em; }
+.case-tag { font-size: 11px; font-weight: 700; color: var(--navy); background: var(--soft); border: 1px solid var(--line); border-radius: 999px; padding: 2px 9px; }
+.case-card h2 { font-family: 'MaruBuri', 'Noto Serif KR', serif; font-size: clamp(19px, 2.6vw, 24px); line-height: 1.4; color: var(--navy); margin-bottom: 8px; letter-spacing: -.01em; }
+.case-card p { font-size: 14px; color: var(--body-c); max-width: 640px; }
+.case-more { display: inline-block; margin-top: 14px; font-size: 13px; font-weight: 700; color: var(--navy); border-bottom: 1.5px solid var(--amber); padding-bottom: 1px; }
+.case-note { margin-top: 22px; font-size: 13px; color: var(--muted); }
+.case-note a { color: var(--navy); font-weight: 700; text-decoration: none; border-bottom: 1.5px solid var(--amber); padding-bottom: 1px; }
+@media (max-width: 760px) {
+  .case-card { padding: 20px 20px; }
+}
+@media print {
+  .case-card { break-inside: avoid; border-color: #999; }
+}
+</style>
+</head>
+<body>
+
+<header class="hero cv-hero">
+  <div class="wrap">
+    <div class="brand">
+      <div class="brand-left">
+        <svg width="34" height="26" viewBox="0 0 34 26" aria-hidden="true">
+          <rect x="0" y="21" width="5" height="5" fill="rgba(255,255,255,.45)"/>
+          <rect x="7" y="16" width="5" height="10" fill="rgba(255,255,255,.6)"/>
+          <rect x="14" y="11" width="5" height="15" fill="rgba(255,255,255,.78)"/>
+          <rect x="21" y="6" width="5" height="20" fill="rgba(255,255,255,.92)"/>
+          <path d="M28 6 L31 .8 L34 6 Z" fill="#E8A33D"/>
+          <rect x="28" y="6" width="6" height="20" fill="#E8A33D"/>
+        </svg>
+        <div class="brand-text">
+          <strong>강용석</strong>
+          <span>KANG YONG-SEOK</span>
+        </div>
+      </div>
+      <div class="hero-links">
+        <a class="home-link" href="index.html">← 프로필 홈</a>
+        <a class="home-link" href="career.html">← 경력 상세</a>
+      </div>
+    </div>
+    <p class="case-kicker">CASE STUDIES</p>
+    <h1>숫자 뒤의 구조를 봅니다</h1>
+    <p class="sub">문제 → 접근 → 결과 → 시사점. 일한 방식을 네 가지 케이스로 정리했습니다.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+    <h2 class="label"><span class="no">01</span><span class="tx">케이스 스터디</span></h2>
+    <div class="case-index">
+      <a class="case-card" href="case-risk.html">
+        <span class="case-head"><span class="case-no">CASE 01</span><span class="case-tag">리스크·감사</span></span>
+        <h2>리스크를 개인의 경험이 아니라, 전사의 언어로</h2>
+        <p>각 부서의 사후 대응을 전사 리스크 맵과 상시 모니터링으로 바꾼 3개월. 11개 Core-Work, 118개 리스크 요소.</p>
+        <span class="case-more">케이스 보기 →</span>
+      </a>
+      <a class="case-card" href="case-purchase.html">
+        <span class="case-head"><span class="case-no">CASE 02</span><span class="case-tag">구매·PI·데이터</span></span>
+        <h2>구매를 개인의 경험에서, 데이터가 남는 구조로</h2>
+        <p>130억 규모 차세대 시스템, 구매 영역 PM. 입찰·계약·평가·Cost DB·매출매입 연계·담합 탐지.</p>
+        <span class="case-more">케이스 보기 →</span>
+      </a>
+      <a class="case-card" href="case-diagnosis.html">
+        <span class="case-head"><span class="case-no">CASE 03</span><span class="case-tag">진단·분석</span></span>
+        <h2>진단을, 반복 가능한 체계로</h2>
+        <p>원가흐름·원가구조·통제 메커니즘 3축으로 사업을 읽고, 데이터와 인터뷰로 가설을 검증해 개선안까지 연결.</p>
+        <span class="case-more">케이스 보기 →</span>
+      </a>
+      <a class="case-card" href="case.html">
+        <span class="case-head"><span class="case-no">CASE 04</span><span class="case-tag">자동화·데이터</span></span>
+        <h2>100% 수작업을 자동화로, 건당 5분을 3분으로</h2>
+        <p>거래업체 신용평가 정보 수집을 자체 개발 시스템으로 전환해 건당 소요시간을 40% 단축한 사례.</p>
+        <span class="case-more">케이스 보기 →</span>
+      </a>
+    </div>
+    <p class="case-note">전체 경력과 자격·교육은 <a href="career.html">경력 상세 페이지</a>에서 확인하실 수 있습니다.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap"><a href="index.html">← 프로필 홈으로</a> · 강용석 · 내부감사·리스크 · 2026 · <a href="career.html">경력 상세</a></div>
+</footer>
+
+</body>
+</html>

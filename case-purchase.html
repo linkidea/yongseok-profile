@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#16324F">
+<title>케이스 — 전사 구매 시스템 (130억·25% 단축) | 강용석</title>
+<meta name="description" content="입찰 데이터가 분석 가능한 구조로 남지 않던 구매를, 견적·입찰·계약·평가가 하나의 데이터 흐름으로 이어지는 전사 구매 시스템으로 전환한 케이스 스터디.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="케이스 스터디 — 전사 구매 시스템 | 강용석">
+<meta property="og:description" content="130억 규모 차세대 시스템, 구매 영역 PM — 입찰·계약·평가·Cost DB·매출매입 연계·담합 탐지.">
+<meta property="og:locale" content="ko_KR">
+<link rel="canonical" href="https://linkidea.github.io/yongseok-profile/case-purchase.html">
+<meta property="og:url" content="https://linkidea.github.io/yongseok-profile/case-purchase.html">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"구매를 개인의 경험에서, 데이터가 남는 구조로 — 전사 구매 시스템","description":"입찰 데이터가 분석 가능한 구조로 남지 않던 구매를, 견적·입찰·계약·평가가 하나의 데이터 흐름으로 이어지는 전사 구매 시스템으로 전환한 케이스 스터디.","url":"https://linkidea.github.io/yongseok-profile/case-purchase.html","author":{"@type":"Person","name":"강용석","alternateName":"Kang Yong-seok","jobTitle":"내부감사·리스크 관리 파트리더","sameAs":["https://www.linkedin.com/in/yongseok-kang"]}}
+</script>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%2316324F'/><rect x='6' y='22' width='4' height='4' fill='%23ffffff' opacity='.5'/><rect x='12' y='17' width='4' height='9' fill='%23ffffff' opacity='.7'/><rect x='18' y='12' width='4' height='14' fill='%23ffffff' opacity='.85'/><rect x='24' y='7' width='4' height='19' fill='%23E8A33D'/></svg>">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="style.css?v=11">
+<style>
+.cv-hero { padding: 40px 0 46px; }
+.cv-hero h1 { font-size: clamp(22px, 3.2vw, 31px); line-height: 1.42; }
+.cv-hero .sub { margin-top: 12px; font-size: 14px; max-width: 640px; text-wrap: balance; }
+.case-kicker { font-size: 12px; font-weight: 700; color: var(--amber); letter-spacing: .18em; margin-bottom: 14px; }
+.home-link { color: rgba(255,255,255,.75); font-size: 13.5px; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.3); padding-bottom: 2px; white-space: nowrap; }
+.home-link:hover { color: #fff; }
+.hero-links { display: flex; align-items: center; gap: 15px; flex-wrap: wrap; }
+.cv-list { list-style: none; }
+.cv-list li { position: relative; padding-left: 15px; font-size: 14px; margin-bottom: 9px; line-height: 1.7; }
+.cv-list li::before { content: ""; position: absolute; left: 0; top: .62em; width: 5px; height: 5px; border-radius: 50%; background: var(--amber); }
+.cv-list strong { color: var(--navy); font-weight: 700; }
+.case-stats { grid-template-columns: repeat(3, 1fr); }
+.case-steps { margin-top: 0; }
+.case-steps + .cv-list { margin-top: 24px; }
+.case-note { margin-top: 26px; font-size: 13px; color: var(--muted); }
+.case-note a { color: var(--navy); font-weight: 700; text-decoration: none; border-bottom: 1.5px solid var(--amber); padding-bottom: 1px; }
+@media (max-width: 760px) {
+  .case-stats { grid-template-columns: 1fr 1fr; row-gap: 24px; }
+  .case-stats .stat:nth-child(3) { grid-column: 1 / -1; border-left: none; padding-left: 0; }
+}
+@media print {
+  .cv-hero { padding: 0 0 16px; margin-bottom: 4px; }
+  .cv-hero h1 { font-size: 17pt; color: #16324F; }
+  .cv-hero .sub { color: #333; }
+  .case-kicker { color: #9A6210; }
+  .cv-list li { break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+
+<header class="hero cv-hero">
+  <div class="wrap">
+    <div class="brand">
+      <div class="brand-left">
+        <svg width="34" height="26" viewBox="0 0 34 26" aria-hidden="true">
+          <rect x="0" y="21" width="5" height="5" fill="rgba(255,255,255,.45)"/>
+          <rect x="7" y="16" width="5" height="10" fill="rgba(255,255,255,.6)"/>
+          <rect x="14" y="11" width="5" height="15" fill="rgba(255,255,255,.78)"/>
+          <rect x="21" y="6" width="5" height="20" fill="rgba(255,255,255,.92)"/>
+          <path d="M28 6 L31 .8 L34 6 Z" fill="#E8A33D"/>
+          <rect x="28" y="6" width="6" height="20" fill="#E8A33D"/>
+        </svg>
+        <div class="brand-text">
+          <strong>강용석</strong>
+          <span>KANG YONG-SEOK</span>
+        </div>
+      </div>
+      <div class="hero-links">
+        <a class="home-link" href="index.html">← 프로필 홈</a>
+        <a class="home-link" href="career.html">← 경력 상세</a>
+        <a class="home-link" href="cases.html">← 케이스 전체</a>
+      </div>
+    </div>
+    <p class="case-kicker">CASE 02 · 전사 구매 시스템</p>
+    <h1>구매를 개인의 경험에서,<br>데이터가 남는 구조로</h1>
+    <p class="sub">130억 규모 차세대 시스템, 구매 영역 PM — 견적·입찰·계약·평가를 하나의 데이터 흐름으로</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+    <h2 class="label"><span class="no">01</span><span class="tx">배경 — 문제</span></h2>
+    <p class="lead">입찰 데이터가 쌓이기만 하고, 분석에 쓰이지 못하고 있었습니다.</p>
+    <ul class="cv-list">
+      <li><strong>데이터 분산</strong> — 구매 데이터가 개인 PC·엑셀에 흩어져 조직의 자산이 되지 못함</li>
+      <li><strong>프로세스 분리</strong> — 견적·입찰·계약·평가가 따로 관리되어 전체 흐름을 보기 어려움</li>
+      <li><strong>수작업 통제</strong> — 업체 신용·면허 확인, 담합 징후 점검이 사후·수작업에 의존</li>
+      <li><strong>감사 추적성 부족</strong> — 왜 이 업체를 선택했는지, 어떤 단가로 계약했는지 이력이 남지 않음</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section soft">
+  <div class="wrap">
+    <h2 class="label"><span class="no">02</span><span class="tx">접근 — 어떻게</span></h2>
+    <figure class="erm-fig erm-fig--audit case-steps">
+      <ol class="erm-steps">
+        <li>
+          <span class="erm-no">01</span>
+          <strong>표준화</strong>
+          <span class="erm-desc">AS-IS 분석 → TO-BE 프로세스 설계, 구매 프로세스 표준화</span>
+        </li>
+        <li>
+          <span class="erm-no">02</span>
+          <strong>시스템</strong>
+          <span class="erm-desc">협력사·입찰·계약·평가를 하나의 전사 구매 시스템으로</span>
+        </li>
+        <li>
+          <span class="erm-no">03</span>
+          <strong>데이터</strong>
+          <span class="erm-desc">Cost DB, 매출·매입 전표 연계, 거래별 마진 가시화</span>
+        </li>
+        <li>
+          <span class="erm-no">04</span>
+          <strong>통제</strong>
+          <span class="erm-desc">업체 신용정보 자동 조회, 담합 탐지(IP 중복·투찰율)</span>
+        </li>
+      </ol>
+      <p class="erm-cycle">↻ 데이터가 쌓이고, 쌓인 데이터가 다시 입찰·가격 분석에 쓰이는 선순환 구조.</p>
+    </figure>
+    <ul class="cv-list">
+      <li><strong>입찰 시스템</strong> — 입찰 데이터를 DB로 분석할 수 있는 구조로 설계했습니다.</li>
+      <li><strong>Cost DB</strong> — 예가 산정 시 입찰 실적과 Cost DB를 함께 조회할 수 있게 했습니다.</li>
+      <li><strong>재무 연계</strong> — 매출 전표와 매입 전표를 연결해, 실제 거래별 마진을 확인할 수 있게 했습니다.</li>
+      <li><strong>업체 조회</strong> — 협력사 조회 메뉴에서 신용정보를 자동으로 표시했습니다.</li>
+      <li><strong>담합 탐지</strong> — IP 중복 점검·투찰율 분석 기능을 구현했고, 실제 점검에서 담합 징후를 포착했습니다.</li>
+      <li><strong>리딩</strong> — 15명 프로젝트 팀을 리딩하고, 변화관리·사용자 교육을 함께 수행했습니다.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2 class="label"><span class="no">03</span><span class="tx">결과 — 숫자로</span></h2>
+    <div class="stats case-stats">
+      <div class="stat">
+        <span class="num">130억 원</span>
+        <span class="stat-label">규모 차세대 시스템 · 구매 영역 PM</span>
+      </div>
+      <div class="stat">
+        <span class="num">25% 단축</span>
+        <span class="stat-label">구매 업무 처리시간</span>
+      </div>
+      <div class="stat">
+        <span class="num">85%</span>
+        <span class="stat-label">사용자 만족도 · 15명 팀 리딩</span>
+      </div>
+    </div>
+    <figure class="auto-fig">
+      <p class="auto-title">구매 데이터 — BEFORE / AFTER</p>
+      <div class="auto-cols">
+        <div class="auto-before">
+          <span class="auto-tag before">BEFORE · 개인·수작업</span>
+          <ul class="auto-list">
+            <li>개인 PC·엑셀에 흩어진 데이터</li>
+            <li>입찰 데이터가 분석되지 않고 적재</li>
+            <li>신용·담합 점검은 사후·수작업</li>
+          </ul>
+        </div>
+        <div class="auto-arrow" aria-hidden="true">→</div>
+        <div class="auto-after">
+          <span class="auto-tag after">AFTER · 데이터·통제</span>
+          <ul class="auto-list">
+            <li>전사 구매 시스템에 데이터 축적</li>
+            <li>Cost DB·입찰 실적 기반 예가 산정</li>
+            <li>신용정보 자동 조회·담합 탐지</li>
+          </ul>
+        </div>
+      </div>
+      <p class="auto-result">데이터 기반 입찰 → 데이터 축적 → 가격 분석이 가능한 선순환 구조로 운영했습니다.</p>
+    </figure>
+  </div>
+</section>
+
+<section class="section soft">
+  <div class="wrap">
+    <h2 class="label"><span class="no">04</span><span class="tx">이 사례가 보여주는 것</span></h2>
+    <ul class="cv-list">
+      <li><strong>구매를 데이터·통제의 구조로</strong> — 개인의 협상력이 아니라, 데이터가 남고 분석되는 구조를 만들었습니다.</li>
+      <li><strong>감사로 이어지는 설계 경험</strong> — 시스템 통제의 약한 지점을 설계 단계에서 이해합니다.</li>
+      <li><strong>현업 출신 감사의 차별점</strong> — 통제를 만들어 본 사람이 통제의 빈틈을 압니다.</li>
+    </ul>
+    <p class="case-note">다른 케이스는 <a href="cases.html">케이스 스터디</a>에서, 전체 경력은 <a href="career.html">경력 상세 페이지</a>에서 확인하실 수 있습니다.</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap"><a href="index.html">← 프로필 홈으로</a> · 강용석 · 내부감사·리스크 · 2026 · <a href="cases.html">케이스 전체</a> · <a href="career.html">경력 상세</a></div>
+</footer>
+
+</body>
+</html>

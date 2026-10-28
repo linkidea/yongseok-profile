@@ -21,12 +21,12 @@
 <style>
 .cv-hero { padding: 40px 0 46px; }
 .cv-hero h1 { font-size: clamp(22px, 3.2vw, 31px); line-height: 1.42; }
-.cv-hero .sub { margin-top: 12px; font-size: 14px; max-width: 640px; }
+.cv-hero .sub { margin-top: 12px; font-size: 14px; max-width: 640px; text-wrap: balance; }
 .case-kicker { font-size: 12px; font-weight: 700; color: var(--amber); letter-spacing: .18em; margin-bottom: 14px; }
 .home-link { color: rgba(255,255,255,.75); font-size: 13.5px; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.3); padding-bottom: 2px; white-space: nowrap; }
 .home-link:hover { color: #fff; }
 button.home-link { background: none; border: none; cursor: pointer; font: inherit; padding: 0 0 2px; }
-.hero-links { display: flex; align-items: center; gap: 15px; }
+.hero-links { display: flex; align-items: center; gap: 15px; flex-wrap: wrap; }
 .cv-list { list-style: none; }
 .cv-list li { position: relative; padding-left: 15px; font-size: 14px; margin-bottom: 9px; line-height: 1.7; }
 .cv-list li::before { content: ""; position: absolute; left: 0; top: .62em; width: 5px; height: 5px; border-radius: 50%; background: var(--amber); }
@@ -70,9 +70,10 @@ button.home-link { background: none; border: none; cursor: pointer; font: inheri
       <div class="hero-links">
         <a class="home-link" href="index.html">← 프로필 홈</a>
         <a class="home-link" href="career.html">← 경력 상세</a>
+        <a class="home-link" href="cases.html">← 케이스 전체</a>
       </div>
     </div>
-    <p class="case-kicker">CASE STUDY · 신용평가 자동화</p>
+    <p class="case-kicker">CASE 04 · 신용평가 자동화</p>
     <h1>100% 수작업을 자동화로,<br>건당 5분을 3분으로</h1>
     <p class="sub">거래업체 재무·주주·거래처 정보 수집을 자체 개발 시스템으로 전환하고, 운영 중 외부 제약도 직접 풀어 성과를 지속시킨 사례</p>
   </div>
@@ -173,12 +174,12 @@ button.home-link { background: none; border: none; cursor: pointer; font: inheri
       <li><strong>접근의 확장</strong> — 같은 접근을 거래처 이상징후 자동 탐지 로직으로 발전시켰습니다.</li>
       <li><strong>결과의 지속성</strong> — 운영 중 외부 데이터 제약은 기다리지 않고 우회 로직을 직접 재개발해 해소했습니다.</li>
     </ul>
-    <p class="case-note">이 사례의 위치와 나머지 경력은 <a href="career.html">경력 상세 페이지</a>에서 확인하실 수 있습니다.</p>
+    <p class="case-note">다른 케이스: <a href="case-risk.html">예방형 리스크 체계</a> · <a href="case-purchase.html">전사 구매 시스템</a> · <a href="case-diagnosis.html">경영진단 방법론</a>. 전체 경력은 <a href="career.html">경력 상세 페이지</a>에서 확인하실 수 있습니다.</p>
   </div>
 </section>
 
 <footer class="footer">
-  <div class="wrap"><a href="index.html">← 프로필 홈으로</a> · 강용석 · 내부감사·리스크 · 2026</div>
+  <div class="wrap"><a href="index.html">← 프로필 홈으로</a> · 강용석 · 내부감사·리스크 · 2026 · <a href="cases.html">케이스 전체</a> · <a href="career.html">경력 상세</a></div>
 </footer>
 
 </body>
