@@ -34,8 +34,9 @@
 .case-link-list { list-style: none; }
 .case-link-list li { padding: 13px 0; border-bottom: 1px solid var(--line); }
 .case-link-list li:first-child { border-top: 1px solid var(--line); }
-.case-link-list a { font-size: 14.5px; font-weight: 700; color: var(--navy); text-decoration: none; }
-.case-link-list a:hover { border-bottom: 1.5px solid var(--amber); }
+.case-link-list strong { font-size: 14.5px; font-weight: 700; color: var(--navy); }
+.case-link-list p { font-size: 13.5px; line-height: 1.75; color: var(--body-c); margin-top: 5px; max-width: 700px; text-wrap: pretty; }
+.case-full { display: inline-block; margin-top: 7px; font-size: 12.5px; font-weight: 700; color: var(--navy); text-decoration: none; border-bottom: 1.5px solid var(--amber); padding-bottom: 1px; }
 .case-link-list .no { font-size: 11.5px; font-weight: 800; color: var(--amber-ink); letter-spacing: .1em; margin-right: 10px; }
 .case-link-list p { font-size: 13px; color: var(--muted); margin-top: 3px; }
 .lang-link { font-size: 12.5px; color: rgba(255,255,255,.8); text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.35); padding-bottom: 2px; }
@@ -86,7 +87,7 @@
     <div class="actions">
       <a class="btn btn-amber" href="mailto:fwipace@naver.com?subject=Resume%20request">Request resume</a>
       <a class="btn btn-ghost" href="career.html">Career detail (Korean)</a>
-      <a class="btn btn-ghost" href="cases.html">Case studies</a>
+      <a class="btn btn-ghost" href="#cases">Case studies</a>
     </div>
   </div>
 </header>
@@ -139,17 +140,37 @@
   </div>
 </section>
 
-<section class="section soft">
+<section class="section soft" id="cases">
   <div class="wrap">
     <h2 class="label"><span class="no">04</span><span class="tx">CASE STUDIES</span></h2>
     <ul class="case-link-list">
-      <li><span class="no">CASE 01</span><a href="case-risk.html">Preventive Risk Framework</a><p>Turning after-the-fact response into an enterprise risk map and always-on monitoring — 11 core work areas, 118 risk elements, in three months.</p></li>
-      <li><span class="no">CASE 02</span><a href="case-diagnosis.html">Audit Case Analysis</a><p>Five categories of misconduct and ethics cases, structured with the Fraud Diamond, and turned into company-wide guidance.</p></li>
-      <li><span class="no">CASE 03</span><a href="case-purchase.html">Enterprise Purchasing System</a><p>KRW 13B next-generation system, purchasing workstream PM — bidding data, cost DB, sales-purchase reconciliation, collusion detection.</p></li>
-      <li><span class="no">CASE 04</span><a href="case-strategy.html">From Strategy to Revenue</a><p>Benchmarking leading overseas players, translating it into strategy, and launching proptech and mobile services — KRW 5B cumulative revenue.</p></li>
-      <li><span class="no">CASE 05</span><a href="case.html">Credit Assessment Automation</a><p>Replacing 100% manual data collection with an in-house system — from 5 minutes to 3 minutes per case, a 40% reduction.</p></li>
+      <li>
+        <span class="no">CASE 01</span><strong>Preventive Risk Framework</strong>
+        <p>Risk was managed department by department, after the fact. Over three months I built an enterprise risk map — 11 core work areas and 118 risk elements — with a lifecycle template and quarterly reviews, then added anomaly detection on transaction data. The map now drives audit scoping and a purchasing policy revision, and the detection logic led to real follow-up actions.</p>
+        <a class="case-full" href="case-risk.html">Full case in Korean →</a>
+      </li>
+      <li>
+        <span class="no">CASE 02</span><strong>Audit Case Analysis</strong>
+        <p>An audit that ends at detection leaves nothing behind, so the same misconduct repeats in other divisions. I analysed cases across five categories — embezzlement, kickbacks, conflicts of interest, false claims and corporate card misuse — structured the causes with the Fraud Diamond, and turned them into written guidance and a short video shared with all seven divisions. Case counts stay confidential.</p>
+        <a class="case-full" href="case-diagnosis.html">Full case in Korean →</a>
+      </li>
+      <li>
+        <span class="no">CASE 03</span><strong>Enterprise Purchasing System</strong>
+        <p>Purchasing data sat in personal PCs and spreadsheets, and estimates, bidding, contracts and vendor evaluation were managed separately. As purchasing workstream PM on a KRW 13B system with a 15-person team, I standardised the process, built a bidding database and cost DB, linked sales and purchase entries to show margin per transaction, and automated vendor credit checks and collusion detection. Processing time fell 25% with 85% user satisfaction.</p>
+        <a class="case-full" href="case-purchase.html">Full case in Korean →</a>
+      </li>
+      <li>
+        <span class="no">CASE 04</span><strong>From Strategy to Revenue</strong>
+        <p>A domestic-only view, and strategy documents that never reached the field. I benchmarked leading overseas players' service and revenue models, translated the findings into the mid-term strategy, and drove proptech and mobile services to launch — KRW 5B in cumulative revenue. I also ran the Bain &amp; Company PMO and the post-split PMI.</p>
+        <a class="case-full" href="case-strategy.html">Full case in Korean →</a>
+      </li>
+      <li>
+        <span class="no">CASE 05</span><strong>Credit Assessment Automation</strong>
+        <p>Collecting counterparty credit data — financials, shareholders, customer concentration — was 100% manual at five minutes per case. I standardised the collection paths, built the extraction logic in-house, ran it on live cases, and rebuilt a workaround when a data provider changed its terms. Result: three minutes per case, a 40% reduction against a 15% target, with the freed time going to analysis.</p>
+        <a class="case-full" href="case.html">Full case in Korean →</a>
+      </li>
     </ul>
-    <p style="margin-top:20px;font-size:13px;color:var(--muted);">Case pages are in Korean. The combined PDF of all five cases is <a href="cases-print.html" style="color:var(--navy);font-weight:700;text-decoration:none;border-bottom:1.5px solid var(--amber);">here</a>.</p>
+    <p style="margin-top:20px;font-size:13px;color:var(--muted);">The five case pages are in Korean; the summaries above cover each one end to end. A combined PDF is <a href="cases-print.html" style="color:var(--navy);font-weight:700;text-decoration:none;border-bottom:1.5px solid var(--amber);">here</a>.</p>
   </div>
 </section>
 
@@ -167,7 +188,7 @@
 </section>
 
 <footer class="footer">
-  <div class="wrap">Yong-seok Kang · Internal Audit &amp; Risk · 2026 <span aria-hidden="true">·</span> <a href="index.html">한국어</a> <span aria-hidden="true">·</span> <a href="career.html">Career detail</a> <span aria-hidden="true">·</span> <a href="cases.html">Cases</a></div>
+  <div class="wrap">Yong-seok Kang · Internal Audit &amp; Risk · 2026 <span aria-hidden="true">·</span> <a href="index.html">한국어</a> <span aria-hidden="true">·</span> <a href="career.html">Career detail</a> <span aria-hidden="true">·</span> <a href="#cases">Cases</a></div>
 </footer>
 
 </body>
