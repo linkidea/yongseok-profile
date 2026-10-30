@@ -42,6 +42,7 @@ body {
 .brand-text span { font-size: 11.5px; color: rgba(255,255,255,.62); letter-spacing: .12em; }
 .brand-mail { font-size: 12.5px; color: rgba(255,255,255,.62); text-decoration: none; letter-spacing: .02em; }
 .brand-mail:hover { color: #fff; }
+.print-contact { display: none; }
 h1 {
   font-family: 'MaruBuri', 'Noto Serif KR', serif;
   font-weight: 700;
@@ -189,6 +190,8 @@ button.btn { background: none; cursor: pointer; font: inherit; }
   .wrap { max-width: none; padding: 0; }
   a { color: #16324F; text-decoration: none; }
   .brand-left svg, .actions, .brand-mail, .more, .btn, .home-link, .resume-note, .hero-photo, .footer a { display: none !important; }
+  .print-contact { display: block; margin-top: 8px; font-size: 9.5pt; color: #333; letter-spacing: .01em; }
+  .case-hint { display: none; }
   .hero { background: none; color: #16324F; padding: 0 0 14px; border-bottom: 2.5px solid #16324F; margin-bottom: 4px; }
   .brand { margin-bottom: 14px; }
   .brand-text strong { color: #16324F; }
