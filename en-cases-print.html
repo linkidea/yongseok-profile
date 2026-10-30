@@ -1,0 +1,668 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#16324F">
+<title>Case studies — 5 cases | Yong-seok Kang</title>
+<meta name="description" content="Five case studies by Yong-seok Kang in one document — preventive risk framework, audit case analysis, enterprise purchasing system, strategy planning, credit assessment automation. For print and PDF.">
+<meta name="robots" content="noindex,follow">
+<link rel="canonical" href="https://linkidea.github.io/yongseok-profile/en-cases-print.html">
+<link rel="alternate" hreflang="ko" href="https://linkidea.github.io/yongseok-profile/cases-print.html">
+<link rel="alternate" hreflang="en" href="https://linkidea.github.io/yongseok-profile/en-cases-print.html">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%2316324F'/><rect x='6' y='22' width='4' height='4' fill='%23ffffff' opacity='.5'/><rect x='12' y='17' width='4' height='9' fill='%23ffffff' opacity='.7'/><rect x='18' y='12' width='4' height='14' fill='%23ffffff' opacity='.85'/><rect x='24' y='7' width='4' height='19' fill='%23E8A33D'/></svg>">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="style.css?v=16">
+<style>
+.cv-hero { padding: 40px 0 46px; }
+.cv-hero h1 { font-size: clamp(22px, 3.2vw, 31px); line-height: 1.42; }
+.cv-hero .sub { margin-top: 12px; font-size: 14px; max-width: 640px; text-wrap: balance; }
+.case-kicker { font-size: 12px; font-weight: 700; color: var(--amber); letter-spacing: .18em; margin-bottom: 14px; }
+.cv-list { list-style: none; }
+.cv-list li { position: relative; padding-left: 15px; font-size: 14px; margin-bottom: 9px; line-height: 1.7; }
+.cv-list li::before { content: ""; position: absolute; left: 0; top: .62em; width: 5px; height: 5px; border-radius: 50%; background: var(--amber); }
+.cv-list strong { color: var(--navy); font-weight: 700; }
+.case-stats { grid-template-columns: repeat(3, 1fr); }
+.case-steps { margin-top: 0; }
+.case-steps + .cv-list { margin-top: 24px; }
+.case-note { margin-top: 26px; font-size: 13px; color: var(--muted); }
+.case-note a { color: var(--navy); font-weight: 700; text-decoration: none; border-bottom: 1.5px solid var(--amber); padding-bottom: 1px; }
+.home-link { color: rgba(255,255,255,.75); font-size: 13.5px; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.3); padding-bottom: 2px; white-space: nowrap; }
+.home-link:hover { color: #fff; }
+
+.doc-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; max-width: 880px; margin: 0 auto; padding: 16px 28px; }
+.doc-toolbar a { font-size: 13.5px; font-weight: 700; color: var(--navy); text-decoration: none; border-bottom: 1.5px solid var(--amber); padding-bottom: 2px; }
+.doc-toolbar button { padding: 11px 20px; border: none; border-radius: 9px; background: var(--amber); color: var(--navy-deep); font: inherit; font-size: 14px; font-weight: 700; cursor: pointer; }
+.doc-toolbar button:hover { background: var(--amber-deep); }
+.doc-list { list-style: none; }
+.doc-list li { display: grid; grid-template-columns: 74px 1fr; gap: 14px; padding: 11px 0; border-bottom: 1px solid var(--line); }
+.doc-list li:first-child { border-top: 1px solid var(--line); }
+.doc-list .no { font-size: 12px; font-weight: 800; color: var(--amber-ink); letter-spacing: .1em; padding-top: 2px; }
+.doc-list strong { display: block; font-size: 14.5px; font-weight: 700; color: var(--navy); }
+.doc-list span.desc { display: block; font-size: 13px; color: var(--muted); }
+.case-block-head { border-top: 3px solid var(--navy); }
+.doc-title { font-family: 'MaruBuri', 'Noto Serif KR', serif; font-size: clamp(20px, 2.6vw, 26px); line-height: 1.45; color: var(--navy); letter-spacing: -.01em; text-wrap: balance; }
+.doc-sub { margin-top: 10px; font-size: 14px; color: var(--body-c); max-width: 640px; text-wrap: pretty; }
+@media (max-width: 760px) {
+  .doc-toolbar { padding: 14px 22px; }
+  .doc-list li { grid-template-columns: 1fr; gap: 2px; }
+}
+@media print {
+  @page { margin: 14mm; }
+  .doc-toolbar { display: none; }
+  .case-block { break-before: page; }
+  .case-block-head { border-top: none; padding-bottom: 6px; }
+  .doc-title { font-size: 16pt; color: #16324F; }
+  .doc-sub { font-size: 10pt; color: #333; }
+  .case-kicker { color: #9A6210; font-size: 9pt; }
+  .cv-list li { break-inside: avoid; }
+  .doc-list li { break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+
+<div class="doc-toolbar">
+  <a href="en-cases.html">← Back to case studies</a>
+  <button type="button" onclick="window.print()">Print / Save as PDF</button>
+</div>
+
+<header class="hero cv-hero">
+  <div class="wrap">
+    <div class="brand">
+      <div class="brand-left">
+        <svg width="34" height="26" viewBox="0 0 34 26" aria-hidden="true">
+          <rect x="0" y="21" width="5" height="5" fill="rgba(255,255,255,.45)"/>
+          <rect x="7" y="16" width="5" height="10" fill="rgba(255,255,255,.6)"/>
+          <rect x="14" y="11" width="5" height="15" fill="rgba(255,255,255,.78)"/>
+          <rect x="21" y="6" width="5" height="20" fill="rgba(255,255,255,.92)"/>
+          <path d="M28 6 L31 .8 L34 6 Z" fill="#E8A33D"/>
+          <rect x="28" y="6" width="6" height="20" fill="#E8A33D"/>
+        </svg>
+        <div class="brand-text">
+          <strong>Yong-seok Kang</strong>
+          <span>강용석</span>
+        </div>
+      </div>
+      <div class="hero-links">
+        <a class="home-link" href="en.html">← Home</a>
+        <a class="home-link" href="en-career.html">← Career</a>
+        <a class="home-link" href="en-cases.html">← All cases</a>
+      </div>
+    </div>
+    <p class="case-kicker">CASE STUDIES · 5</p>
+    <h1>Case studies</h1>
+    <p class="sub">Yong-seok Kang — Part Leader, Diagnosis &amp; Audit. Problem → approach → result → takeaway.</p>
+    <p class="print-contact">fwipace@naver.com · linkedin.com/in/yongseok-kang · linkidea.github.io/yongseok-profile</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+    <h2 class="label"><span class="no">CONTENTS</span><span class="tx">FIVE CASES</span></h2>
+    <ol class="doc-list">
+      <li><span class="no">CASE 01</span><div><strong>Risk as the company's language, not one person's experience</strong><span class="desc">Turning after-the-fact response into an enterprise risk map and always-on monitoring, in three months</span></div></li>
+      <li><span class="no">CASE 02</span><div><strong>How one audit becomes something the company keeps</strong><span class="desc">How one audit becomes prevention material for every division</span></div></li>
+      <li><span class="no">CASE 03</span><div><strong>Purchasing that leaves data behind, not just experience</strong><span class="desc">KRW 13B next-generation system, purchasing workstream PM</span></div></li>
+      <li><span class="no">CASE 04</span><div><strong>From strategy to service, from service to revenue</strong><span class="desc">Benchmarking → strategy → proptech and mobile services, KRW 5B cumulative revenue</span></div></li>
+      <li><span class="no">CASE 05</span><div><strong>From 100% manual to automated, from 5 minutes to 3</strong><span class="desc">100% manual credit data collection automated, five minutes to three per case</span></div></li>
+    </ol>
+    <p class="case-note">Each case starts on a new page. This document is for printing or saving as PDF; the on-screen index is <a href="en-cases.html">here</a>.</p>
+  </div>
+</section>
+
+<div class="case-block">
+  <section class="section case-block-head">
+    <div class="wrap">
+      <p class="case-kicker">CASE 01 · Risk · Audit</p>
+      <h2 class="doc-title">Risk as the company's language,<br>not one person's experience</h2>
+      <p class="doc-sub">Three months that turned after-the-fact response into an enterprise risk map and always-on monitoring</p>
+    </div>
+  </section>
+<section class="section">
+  <div class="wrap">
+    <h2 class="label"><span class="no">01</span><span class="tx">BACKGROUND — THE PROBLEM</span></h2>
+    <p class="lead">Risk management rested on each department's own experience, applied after the fact.</p>
+    <ul class="cv-list">
+      <li><strong>Siloed</strong> — each department managed its own risks; no shared standard or language</li>
+      <li><strong>Reactive</strong> — checked and acted only after a problem surfaced; recovery over prevention</li>
+      <li><strong>Person-dependent</strong> — the quality of management varied with whoever was in charge</li>
+      <li><strong>Trigger</strong> — repeated incidents and audit findings exposed the need for a company-wide standard and monitoring</li>
+    </ul>
+  </div>
+</section>
+<section class="section soft">
+  <div class="wrap">
+    <h2 class="label"><span class="no">02</span><span class="tx">APPROACH — HOW</span></h2>
+    <figure class="erm-fig erm-fig--audit case-steps">
+      <ol class="erm-steps">
+        <li>
+          <span class="erm-no">01</span>
+          <strong>Derive</strong>
+          <span class="erm-desc">Three months of diagnosis results, past cases and interviews produced 11 core work areas</span>
+        </li>
+        <li>
+          <span class="erm-no">02</span>
+          <strong>Define</strong>
+          <span class="erm-desc">118 risk elements across core work areas, with a risk map by business</span>
+        </li>
+        <li>
+          <span class="erm-no">03</span>
+          <strong>Operate</strong>
+          <span class="erm-desc">Lifecycle management, quarterly reviews, reflected in audit plans and policy</span>
+        </li>
+        <li>
+          <span class="erm-no">04</span>
+          <strong>Detect</strong>
+          <span class="erm-desc">Anomaly detection on transaction data; cause checks and action requests</span>
+        </li>
+      </ol>
+      <p class="erm-cycle">↻ Define risk, connect it to diagnosis and monitoring, and manage it continuously.</p>
+    </figure>
+    <ul class="cv-list">
+      <li><strong>Risk map</strong> — defined 118 risk elements across 11 core work areas and organised them into a risk map for each business.</li>
+      <li><strong>Lifecycle</strong> — built a template for identify → assess → respond → monitor → close, and ran a quarterly review.</li>
+      <li><strong>Audit linkage</strong> — fed the risk map into audit planning and prioritisation, which shaped audit scope and led to a revision of the purchasing management policy.</li>
+      <li><strong>Anomaly detection</strong> — monitored threshold-based signals including sales mix, counterparty credit rating, changes in transaction volume, new counterparties, concentration and transactions with closed businesses. I used AI to help build the logic; when a figure looked wrong, the relevant division was asked to explain and to act.</li>
+    </ul>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <h2 class="label"><span class="no">03</span><span class="tx">RESULT — IN NUMBERS</span></h2>
+    <div class="stats case-stats">
+      <div class="stat">
+        <span class="num">11</span>
+        <span class="stat-label">core work areas · risk management units</span>
+      </div>
+      <div class="stat">
+        <span class="num">118</span>
+        <span class="stat-label">risk elements · risk map by business</span>
+      </div>
+      <div class="stat">
+        <span class="num">7</span>
+        <span class="stat-label">divisions and subsidiaries · quarterly review</span>
+      </div>
+    </div>
+    <figure class="auto-fig">
+      <p class="auto-title">RISK MANAGEMENT — BEFORE / AFTER</p>
+      <div class="auto-cols">
+        <div class="auto-before">
+          <span class="auto-tag before">BEFORE · after the fact</span>
+          <ul class="auto-list">
+            <li>Managed separately by each department</li>
+            <li>Checked and acted after a problem</li>
+            <li>Dependent on individual experience</li>
+          </ul>
+        </div>
+        <div class="auto-arrow" aria-hidden="true">→</div>
+        <div class="auto-after">
+          <span class="auto-tag after">AFTER · preventive</span>
+          <ul class="auto-list">
+            <li>One company-wide risk map</li>
+            <li>Lifecycle management and quarterly review</li>
+            <li>Anomaly detection on transaction data</li>
+          </ul>
+        </div>
+      </div>
+      <p class="auto-result">The risk map now feeds audit scope and prioritisation and a revision of the purchasing management policy, and anomaly detection led to real cause checks and follow-up actions.</p>
+    </figure>
+  </div>
+</section>
+<section class="section soft">
+  <div class="wrap">
+    <h2 class="label"><span class="no">04</span><span class="tx">WHAT THIS CASE SHOWS</span></h2>
+    <ul class="cv-list">
+      <li><strong>The point of preventive audit</strong> — not catching people, but defining risk in advance and turning it into a standing signal.</li>
+      <li><strong>The advantage of an auditor from the business</strong> — turning diagnosis results into a structure, then agreeing it with the divisions and operating it.</li>
+      <li><strong>Execution</strong> — resolving data-access constraints and standards negotiations inside three months.</li>
+    </ul>
+  </div>
+</section>
+</div>
+
+<div class="case-block">
+  <section class="section case-block-head">
+    <div class="wrap">
+      <p class="case-kicker">CASE 02 · Audit · Ethics</p>
+      <h2 class="doc-title">How one audit becomes<br>something the company keeps</h2>
+      <p class="doc-sub">Analysing misconduct and ethics cases, structuring causes and warning signs, and sharing them with divisions as written guidance and video</p>
+    </div>
+  </section>
+<section class="section">
+  <div class="wrap">
+    <h2 class="label"><span class="no">01</span><span class="tx">BACKGROUND — THE PROBLEM</span></h2>
+    <p class="lead">When an audit ends with catching individual cases, the same kind of misconduct repeats in another division.</p>
+    <ul class="cv-list">
+      <li><strong>Detection-centred</strong> — confirming a case and closing it leaves the cause and the warning signs with nobody</li>
+      <li><strong>Cases not shared</strong> — the same type of risk surfaces again in a different division</li>
+      <li><strong>No field language</strong> — audit reports are hard for the field to read, so they rarely turn into prevention</li>
+    </ul>
+  </div>
+</section>
+<section class="section soft">
+  <div class="wrap">
+    <h2 class="label"><span class="no">02</span><span class="tx">APPROACH — HOW</span></h2>
+    <figure class="erm-fig erm-fig--audit case-steps">
+      <ol class="erm-steps">
+        <li>
+          <span class="erm-no">01</span>
+          <strong>Analyse cases</strong>
+          <span class="erm-desc">Categorising misconduct and ethics cases by type and pattern</span>
+        </li>
+        <li>
+          <span class="erm-no">02</span>
+          <strong>Analyse causes</strong>
+          <span class="erm-desc">Fraud Diamond — opportunity, pressure, rationalisation, capability</span>
+        </li>
+        <li>
+          <span class="erm-no">03</span>
+          <strong>Prevent recurrence</strong>
+          <span class="erm-desc">Warning signs and checkpoints defined per category</span>
+        </li>
+        <li>
+          <span class="erm-no">04</span>
+          <strong>Communicate</strong>
+          <span class="erm-desc">Written guidance and video shared with divisions</span>
+        </li>
+      </ol>
+      <p class="erm-cycle">↻ Turn one audit into a case, then feed it back to the field as prevention material.</p>
+    </figure>
+    <ul class="cv-list">
+      <li><strong>Scope</strong> — embezzlement, kickbacks, conflicts of interest, false claims, misuse of corporate cards</li>
+      <li><strong>Framework</strong> — the Fraud Diamond (opportunity, pressure, rationalisation, capability) to structure causes</li>
+      <li><strong>Content</strong> — written guidance and a video, in language the field can follow</li>
+      <li><strong>Link to audit</strong> — warning signs found in diagnosis were verified through case analysis and fed back as guidance</li>
+    </ul>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <h2 class="label"><span class="no">03</span><span class="tx">RESULT — IN NUMBERS</span></h2>
+    <div class="stats case-stats">
+      <div class="stat">
+        <span class="num">5</span>
+        <span class="stat-label">categories of misconduct · embezzlement, kickbacks, conflicts, false claims, cards</span>
+      </div>
+      <div class="stat">
+        <span class="num">2</span>
+        <span class="stat-label">formats of guidance · written and video</span>
+      </div>
+      <div class="stat">
+        <span class="num">7</span>
+        <span class="stat-label">divisions and subsidiaries reached</span>
+      </div>
+    </div>
+    <figure class="auto-fig">
+      <p class="auto-title">AUDIT CASES — BEFORE / AFTER</p>
+      <div class="auto-cols">
+        <div class="auto-before">
+          <span class="auto-tag before">BEFORE · detection only</span>
+          <ul class="auto-list">
+            <li>Ends when the individual case is caught</li>
+            <li>Cases are not shared</li>
+            <li>The same pattern repeats</li>
+          </ul>
+        </div>
+        <div class="auto-arrow" aria-hidden="true">→</div>
+        <div class="auto-after">
+          <span class="auto-tag after">AFTER · cases and guidance</span>
+          <ul class="auto-list">
+            <li>Case analysis → causes and warning signs</li>
+            <li>Written guidance and video produced</li>
+            <li>Prevention material across divisions</li>
+          </ul>
+        </div>
+      </div>
+      <p class="auto-result">One audit becomes case analysis and guidance, and stays with the other divisions as prevention material.</p>
+    </figure>
+  </div>
+</section>
+<section class="section soft">
+  <div class="wrap">
+    <h2 class="label"><span class="no">04</span><span class="tx">WHAT THIS CASE SHOWS</span></h2>
+    <ul class="cv-list">
+      <li><strong>Audit is for prevention, not detection</strong> — leaving behind the cause and the warning signs, not just the case.</li>
+      <li><strong>Sharing cases is learning, not warning</strong> — so the same type does not repeat in another division.</li>
+      <li><strong>The advantage of an auditor from the business</strong> — understanding the operational context of a case and explaining it in the field's own language.</li>
+    </ul>
+  </div>
+</section>
+</div>
+
+<div class="case-block">
+  <section class="section case-block-head">
+    <div class="wrap">
+      <p class="case-kicker">CASE 03 · Purchasing · PI · Data</p>
+      <h2 class="doc-title">Purchasing that leaves data behind,<br>not just experience</h2>
+      <p class="doc-sub">KRW 13B next-generation system, purchasing workstream PM — quotations, bidding, contracts and evaluation in one data flow</p>
+    </div>
+  </section>
+<section class="section">
+  <div class="wrap">
+    <h2 class="label"><span class="no">01</span><span class="tx">BACKGROUND — THE PROBLEM</span></h2>
+    <p class="lead">Bidding data accumulated but was never used for analysis.</p>
+    <ul class="cv-list">
+      <li><strong>Scattered data</strong> — purchasing data lived on personal PCs and in spreadsheets, never becoming an organisational asset</li>
+      <li><strong>Split process</strong> — quotations, bidding, contracts and evaluation were managed separately, so the whole flow was hard to see</li>
+      <li><strong>Manual control</strong> — vendor credit and licence checks, and collusion screening, depended on manual work after the fact</li>
+      <li><strong>Weak audit trail</strong> — no record of why a vendor was selected or at what unit price the contract was signed</li>
+    </ul>
+  </div>
+</section>
+<section class="section soft">
+  <div class="wrap">
+    <h2 class="label"><span class="no">02</span><span class="tx">APPROACH — HOW</span></h2>
+    <figure class="erm-fig erm-fig--audit case-steps">
+      <ol class="erm-steps">
+        <li>
+          <span class="erm-no">01</span>
+          <strong>Standardise</strong>
+          <span class="erm-desc">AS-IS analysis → TO-BE design, standardising the purchasing process</span>
+        </li>
+        <li>
+          <span class="erm-no">02</span>
+          <strong>Systemise</strong>
+          <span class="erm-desc">Vendors, bidding, contracts and evaluation in one enterprise system</span>
+        </li>
+        <li>
+          <span class="erm-no">03</span>
+          <strong>Data</strong>
+          <span class="erm-desc">Cost DB, sales and purchase entry linkage, margin visible per transaction</span>
+        </li>
+        <li>
+          <span class="erm-no">04</span>
+          <strong>Control</strong>
+          <span class="erm-desc">Automated vendor credit lookup, collusion detection (IP overlap, bid rates)</span>
+        </li>
+      </ol>
+      <p class="erm-cycle">↻ Data accumulates, and the accumulated data feeds back into bidding and price analysis.</p>
+    </figure>
+    <ul class="cv-list">
+      <li><strong>Bidding system</strong> — designed so that bidding data could be analysed as a database rather than archived as documents.</li>
+      <li><strong>Cost DB</strong> — made bid history and the cost database available together when estimating pre-bid prices.</li>
+      <li><strong>Financial linkage</strong> — connected sales entries with purchase entries so actual margin could be checked per transaction.</li>
+      <li><strong>Vendor lookup</strong> — displayed credit information automatically in the vendor lookup screen.</li>
+      <li><strong>Collusion detection</strong> — implemented IP-overlap checks and bid-rate analysis, and the screening surfaced signs of collusion in live reviews.</li>
+      <li><strong>Leadership</strong> — led a 15-person project team and ran change management and user training alongside delivery.</li>
+    </ul>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <h2 class="label"><span class="no">03</span><span class="tx">RESULT — IN NUMBERS</span></h2>
+    <div class="stats case-stats">
+      <div class="stat">
+        <span class="num">KRW 13B</span>
+        <span class="stat-label">next-generation system · purchasing workstream PM</span>
+      </div>
+      <div class="stat">
+        <span class="num">25%</span>
+        <span class="stat-label">reduction in purchasing processing time</span>
+      </div>
+      <div class="stat">
+        <span class="num">85%</span>
+        <span class="stat-label">user satisfaction · 15-person team led</span>
+      </div>
+    </div>
+    <figure class="auto-fig">
+      <p class="auto-title">PURCHASING DATA — BEFORE / AFTER</p>
+      <div class="auto-cols">
+        <div class="auto-before">
+          <span class="auto-tag before">BEFORE · individual, manual</span>
+          <ul class="auto-list">
+            <li>Data scattered across PCs and spreadsheets</li>
+            <li>Bidding data stacked up, unanalysed</li>
+            <li>Credit and collusion checks manual, after the fact</li>
+          </ul>
+        </div>
+        <div class="auto-arrow" aria-hidden="true">→</div>
+        <div class="auto-after">
+          <span class="auto-tag after">AFTER · data and control</span>
+          <ul class="auto-list">
+            <li>Data accumulates in one enterprise system</li>
+            <li>Pre-bid estimates from cost DB and bid history</li>
+            <li>Automated credit lookup and collusion detection</li>
+          </ul>
+        </div>
+      </div>
+      <p class="auto-result">Operating as a loop: data-driven bidding → data accumulation → price analysis that is actually possible.</p>
+    </figure>
+  </div>
+</section>
+<section class="section soft">
+  <div class="wrap">
+    <h2 class="label"><span class="no">04</span><span class="tx">WHAT THIS CASE SHOWS</span></h2>
+    <ul class="cv-list">
+      <li><strong>Purchasing as a structure of data and control</strong> — not individual negotiating skill, but a structure where data stays and can be analysed.</li>
+      <li><strong>Design experience that carries into audit</strong> — understanding where control is weak at the design stage.</li>
+      <li><strong>What an auditor from the business adds</strong> — someone who has built controls knows where they leak.</li>
+    </ul>
+  </div>
+</section>
+</div>
+
+<div class="case-block">
+  <section class="section case-block-head">
+    <div class="wrap">
+      <p class="case-kicker">CASE 04 · Strategy</p>
+      <h2 class="doc-title">From strategy to service,<br>from service to revenue</h2>
+      <p class="doc-sub">2021–2022 strategy planning — benchmarking leading overseas players → embedding the findings in strategy → launching proptech and mobile services, KRW 5B in cumulative revenue</p>
+    </div>
+  </section>
+<section class="section">
+  <div class="wrap">
+    <h2 class="label"><span class="no">01</span><span class="tx">BACKGROUND — THE PROBLEM</span></h2>
+    <p class="lead">When strategy stays on paper, the organisation does not move.</p>
+    <ul class="cv-list">
+      <li><strong>Limited view</strong> — a domestic-only perspective made new growth paths hard to find</li>
+      <li><strong>Gap to execution</strong> — strategy, services and KPIs moving separately rarely turn into results</li>
+      <li><strong>Need to benchmark</strong> — comparing and analysing the service models of leading overseas players was necessary to inform strategy</li>
+    </ul>
+  </div>
+</section>
+<section class="section soft">
+  <div class="wrap">
+    <h2 class="label"><span class="no">02</span><span class="tx">APPROACH — HOW</span></h2>
+    <figure class="erm-fig erm-fig--audit case-steps">
+      <ol class="erm-steps">
+        <li>
+          <span class="erm-no">01</span>
+          <strong>Benchmark</strong>
+          <span class="erm-desc">Service and revenue structures of leading overseas players</span>
+        </li>
+        <li>
+          <span class="erm-no">02</span>
+          <strong>Strategy</strong>
+          <span class="erm-desc">Core capability, market and competitor gaps, catch-up strategy</span>
+        </li>
+        <li>
+          <span class="erm-no">03</span>
+          <strong>Service</strong>
+          <span class="erm-desc">Planning and launch of proptech and mobile services</span>
+        </li>
+        <li>
+          <span class="erm-no">04</span>
+          <strong>Execute</strong>
+          <span class="erm-desc">KPI management, support for executive decisions</span>
+        </li>
+      </ol>
+      <p class="erm-cycle">↻ Benchmarking becomes strategy, and strategy becomes services and revenue.</p>
+    </figure>
+    <ul class="cv-list">
+      <li><strong>Overseas benchmarking</strong> — compared service models, revenue structures and customer touchpoints</li>
+      <li><strong>Into strategy</strong> — turned the findings into the mid-term strategy and concrete new-service initiatives</li>
+      <li><strong>Service launch</strong> — proptech and mobile services</li>
+      <li><strong>Into execution</strong> — KPI management, executive decision support, Bain &amp; Company PMO</li>
+    </ul>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <h2 class="label"><span class="no">03</span><span class="tx">RESULT — IN NUMBERS</span></h2>
+    <div class="stats case-stats">
+      <div class="stat">
+        <span class="num">KRW 5B</span>
+        <span class="stat-label">cumulative revenue from new services</span>
+      </div>
+      <div class="stat">
+        <span class="num">Proptech</span>
+        <span class="stat-label">service launched</span>
+      </div>
+      <div class="stat">
+        <span class="num">Mobile</span>
+        <span class="stat-label">service launched</span>
+      </div>
+    </div>
+    <figure class="auto-fig">
+      <p class="auto-title">STRATEGY IN EXECUTION — BEFORE / AFTER</p>
+      <div class="auto-cols">
+        <div class="auto-before">
+          <span class="auto-tag before">BEFORE · domestic, documents</span>
+          <ul class="auto-list">
+            <li>Domestic market perspective only</li>
+            <li>Strategy as a document</li>
+            <li>No new services</li>
+          </ul>
+        </div>
+        <div class="auto-arrow" aria-hidden="true">→</div>
+        <div class="auto-after">
+          <span class="auto-tag after">AFTER · benchmark and execute</span>
+          <ul class="auto-list">
+            <li>Overseas benchmarking reflected in strategy</li>
+            <li>Proptech and mobile services launched</li>
+            <li>KRW 5B cumulative revenue</li>
+          </ul>
+        </div>
+      </div>
+      <p class="auto-result">Benchmarking became strategy, and strategy became services and revenue.</p>
+    </figure>
+  </div>
+</section>
+<section class="section soft">
+  <div class="wrap">
+    <h2 class="label"><span class="no">04</span><span class="tx">WHAT THIS CASE SHOWS</span></h2>
+    <ul class="cv-list">
+      <li><strong>Strategy is proven by services and revenue, not reports</strong> — benchmarking was carried through to launched services.</li>
+      <li><strong>Turning benchmarking into strategy</strong> — not stopping at comparison and analysis, but shaping it into company initiatives.</li>
+      <li><strong>Connecting executive language to field execution</strong> — strategy, KPIs and services pointed in the same direction.</li>
+    </ul>
+  </div>
+</section>
+</div>
+
+<div class="case-block">
+  <section class="section case-block-head">
+    <div class="wrap">
+      <p class="case-kicker">CASE 05 · Automation · Data</p>
+      <h2 class="doc-title">From 100% manual to automated,<br>from 5 minutes to 3</h2>
+      <p class="doc-sub">Moving counterparty financial, shareholder and customer data collection to an in-house system — and solving an external data constraint directly when it appeared mid-operation</p>
+    </div>
+  </section>
+<section class="section">
+  <div class="wrap">
+    <h2 class="label"><span class="no">01</span><span class="tx">BACKGROUND — THE PROBLEM</span></h2>
+    <p class="lead">The counterparty credit information that diagnosis and audit depend on was collected entirely by hand.</p>
+    <ul class="cv-list">
+      <li><strong>What was collected</strong> — counterparty financials, shareholder and ownership structure, and customer concentration, looked up case by case</li>
+      <li><strong>How</strong> — search the data site, read the screen, type it up. Five minutes per case</li>
+      <li><strong>Structural problem</strong> — repetitive work and constant room for error, eating into the analyst's actual analysis time</li>
+      <li><strong>Starting point</strong> — selected from five productivity candidates, with a target of at least 15% less time per case</li>
+    </ul>
+  </div>
+</section>
+<section class="section soft">
+  <div class="wrap">
+    <h2 class="label"><span class="no">02</span><span class="tx">APPROACH — HOW</span></h2>
+    <figure class="erm-fig erm-fig--audit case-steps">
+      <ol class="erm-steps">
+        <li>
+          <span class="erm-no">01</span>
+          <strong>Decompose</strong>
+          <span class="erm-desc">Standardised items and paths into financial, shareholder and counterparty types</span>
+        </li>
+        <li>
+          <span class="erm-no">02</span>
+          <strong>Build</strong>
+          <span class="erm-desc">Designed and developed the extraction and processing logic, using AI for data handling</span>
+        </li>
+        <li>
+          <span class="erm-no">03</span>
+          <strong>Pilot</strong>
+          <span class="erm-desc">Applied to live assessments and closed the exception cases</span>
+        </li>
+        <li>
+          <span class="erm-no">04</span>
+          <strong>Rebuild</strong>
+          <span class="erm-desc">A provider imposed a data constraint; rebuilt a workaround to resolve it</span>
+        </li>
+      </ol>
+      <p class="erm-cycle">↻ Not stopping at development — solving the operating constraints directly so the result held.</p>
+    </figure>
+    <ul class="cv-list">
+      <li><strong>Verification scope</strong> — with repetitive collection and comparison handled by the system, the analyst focuses on interpreting anomalies rather than gathering data.</li>
+      <li><strong>Extension</strong> — the same approach grew into automated anomaly detection for counterparties.</li>
+      <li><strong>Durability</strong> — when an external data constraint appeared, I rebuilt a workaround myself instead of waiting it out.</li>
+    </ul>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <h2 class="label"><span class="no">03</span><span class="tx">RESULT — IN NUMBERS</span></h2>
+    <div class="stats case-stats">
+      <div class="stat">
+        <span class="num">5 → 3 min</span>
+        <span class="stat-label">time per case · information collection</span>
+      </div>
+      <div class="stat">
+        <span class="num">40%</span>
+        <span class="stat-label">reduction · against a 15% target</span>
+      </div>
+      <div class="stat">
+        <span class="num">100%</span>
+        <span class="stat-label">manual process converted · data stored in a database</span>
+      </div>
+    </div>
+    <figure class="auto-fig">
+      <p class="auto-title">COLLECTION PROCESS — BEFORE / AFTER</p>
+      <div class="auto-cols">
+        <div class="auto-before">
+          <span class="auto-tag before">BEFORE · manual</span>
+          <ul class="auto-list">
+            <li>Site search case by case</li>
+            <li>Screen reading, then typing it up</li>
+            <li>Five minutes per case, repeated</li>
+          </ul>
+        </div>
+        <div class="auto-arrow" aria-hidden="true">→</div>
+        <div class="auto-after">
+          <span class="auto-tag after">AFTER · automated</span>
+          <ul class="auto-list">
+            <li>Financial, shareholder and counterparty data collected automatically</li>
+            <li>Collection history stored, exceptions checked automatically</li>
+            <li>Three minutes per case, time shifted to analysis</li>
+          </ul>
+        </div>
+      </div>
+      <p class="auto-result">After automation — <strong>40% less time per case</strong>, with the time recovered going into planning and analysis.</p>
+    </figure>
+  </div>
+</section>
+<section class="section soft">
+  <div class="wrap">
+    <h2 class="label"><span class="no">04</span><span class="tx">WHAT THIS CASE SHOWS</span></h2>
+    <ul class="cv-list">
+      <li><strong>Wider verification, not just less work</strong> — repetitive collection and comparison goes to the system, and people interpret the anomalies. The point of automation is wider verification.</li>
+      <li><strong>Extending the approach</strong> — the same method developed into automated counterparty anomaly detection.</li>
+      <li><strong>Making results last</strong> — when external data constraints appeared in operation, I rebuilt a workaround rather than waiting.</li>
+    </ul>
+  </div>
+</section>
+</div>
+
+<footer class="footer">
+  <div class="wrap">Yong-seok Kang · Internal Audit &amp; Risk · 2026 · <a href="en-cases.html">All cases</a> · <a href="en-career.html">Career</a></div>
+</footer>
+
+</body>
+</html>

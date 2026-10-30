@@ -37,6 +37,11 @@
 | `case.html` | 케이스 05 — 신용평가 자동화 (자동화·데이터, 100% 수작업→자동화, 건당 5분→3분·40%). 2026-10-24 공개 |
 | `cases-print.html` | **케이스 5건 통합 인쇄/PDF 문서** — 표지·목차 + 케이스별 새 페이지(A4 11p). `tools/build_cases_print.py`로 생성 — **원본 케이스 수정 후 재실행할 것**. `noindex`. 2026-10-30 신설 |
 | `en.html` | **영문 요약 페이지** — 동일 사실의 영문판(학력 제외). 외국계·해외 헤드헌터용. index.html과 hreflang 상호 연결. 2026-10-30 신설 |
+| `en-career.html` | 영문 경력 상세 — career.html 대응(학력 제외, 회사명 영문 표기) |
+| `en-cases.html` | 영문 케이스 인덱스 — cases.html 대응(숫자 배지·통합 PDF 버튼) |
+| `en-case-risk.html` · `en-case-diagnosis.html` · `en-case-purchase.html` · `en-case-strategy.html` · `en-case.html` | 영문 케이스 01~05 — 각 한국어 케이스 페이지 대응 |
+| `en-cases-print.html` | 영문 케이스 5건 통합 PDF — `tools/build_cases_print_en.py`로 생성 |
+| `tools/build_cases_print_en.py` | `en-cases-print.html` 생성기 (`build_cases_print.py`의 extract를 재사용) |
 | `tools/build_cases_print.py` | `cases-print.html` 생성기 (`python tools/build_cases_print.py`) |
 | `style.css` | 전 페이지 공유 스타일. **공통 수정은 여기서** |
 | `sitemap.xml` | 8개 URL 사이트맵 (2026-10-30 신설) — 페이지 추가 시 함께 갱신 |
@@ -126,6 +131,8 @@
 ㉖ 24차(2026-10-30, 사용자 지적 "커리어 페이지에 케이스 버튼이 4개뿐"): **경력 페이지 케이스 버튼을 케이스별 5개로 확장** — 기존 3개(진단/감사→cases.html, 전략기획→04, PI PM→03)에서 ① 진단/감사 = 케이스 02(감사 사례 분석) + 케이스 05(신용평가 자동화) ② 리스크 관리(2022~2023) = 케이스 01(예방형 리스크 체계) ③ 전략기획 = 04 ④ PI 시스템 PM = 03, 그리고 경력 섹션 끝에 "케이스 스터디 5건 전체 보기" 텍스트 링크. 버튼 라벨을 "케이스 0N · 제목" 형식으로 통일, `.case-inline`을 flex(다중 버튼 대응). ⑤ 랜딩 헤더 우상단에 **EN 배지**(`.brand-lang`, en.html 연결) 추가 — 영문 페이지 발견성 보강, 인쇄 시 숨김. style.css 변경 → 전 페이지 `?v=16`. 검증: 경력 페이지 버튼 5개·케이스 링크 5종 전부 연결, 375·1440 넘침 0건. 작업 중 `<section>` 태그가 한 번 깨졌으나 구조 검증(섹션 6개·라벨 01~06)으로 복구 확인.
 
 ㉗ 25차(2026-10-30, 사용자 확인 "영문은 메인만이고 버튼 누르면 한글로 가는 게 맞나"): **영문 페이지 자립성 보강** — en.html만 영문이고 나머지 페이지는 한국어인 상태를 확인. 영문 독자가 한국어 페이지로 나가지 않아도 되도록 ① 케이스 5건 각각에 문제→접근→결과 3~4문장 영문 요약(기존 1문장에서 확장, 수치는 기존 공개 수치만) ② 각 케이스 하단에 "Full case in Korean →" 라벨 명시 ③ 히어로·푸터의 "Case studies" 링크를 cases.html 대신 **페이지 내 #cases 앵커**로 변경. 경력 상세·케이스 상세·통합 PDF는 한국어 그대로(번역은 범위 밖, 필요 시 별도 결정). 검증: 375·1440 넘침 0건, 요약 5건·링크 5건 정상.
+
+㉘ 26차(2026-10-30, 사용자 지시 "영문페이지끼리 보이게, 번역 잘 해줘"): **영문 사이트 완성(8개 페이지 추가)** — en.html만 있던 상태에서 ① `en-career.html`(경력 상세 전체 번역, 학력 제외) ② `en-cases.html`(케이스 인덱스, 숫자 배지·PDF 버튼) ③ 영문 케이스 5건(`en-case-risk`·`en-case-diagnosis`·`en-case-purchase`·`en-case-strategy`·`en-case.html`, 각 하단 이전/다음 네비 포함) ④ `en-cases-print.html`(영문 통합 PDF, A4 11p) + 생성기 `tools/build_cases_print_en.py`. en.html은 한국어 요약 링크를 전부 영문 페이지로 교체하고 각 케이스에 "Read the full case" 링크. 영문 페이지 간 상호 링크 + 상단 "한국어" 스위치(대응 한국어 페이지로) 유지. 한·영 전 페이지 hreflang 상호 등록, sitemap 16 URL로 확장. 번역 원칙: 기존 공개 수치만 사용, 학력·베트남·탱크 등 마스킹 유지, 부장=General Manager·책임=Manager·파트리더=Part Leader. 검증: 18개 HTML 375·1440 넘침 0건, 내부 링크 누락 0건, JSON-LD 파싱 OK, 영문 PDF 11p(케이스별 새 페이지). 영문 수정 시 `python tools/build_cases_print_en.py` 재실행 필요.
 
 ## 9. 대기 항목 (사용자 결정 필요)
 
