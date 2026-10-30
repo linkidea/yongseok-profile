@@ -195,6 +195,26 @@ button.btn { background: none; cursor: pointer; font: inherit; }
   .auto-arrow { padding: 8px 0; justify-content: flex-start; transform: rotate(90deg); transform-origin: left center; width: 24px; height: 24px; }
 }
 
+/* ---------- 케이스 카드 (랜딩 미리보기) ---------- */
+.case-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-bottom: 24px; }
+.case-mini { display: block; padding: 16px 18px; border: 1px solid var(--line); border-radius: 12px; background: #fff; text-decoration: none; color: inherit; transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease; }
+.case-mini:hover { border-color: var(--amber); box-shadow: 0 8px 22px rgba(22,50,79,.08); transform: translateY(-2px); }
+.case-mini .no { font-size: 10.5px; font-weight: 800; color: var(--amber-ink); letter-spacing: .12em; }
+.case-mini .tag { margin-left: 7px; font-size: 10.5px; font-weight: 700; color: var(--muted); letter-spacing: .02em; }
+.case-mini h3 { margin-top: 7px; font-size: 13.5px; font-weight: 700; color: var(--navy); line-height: 1.45; letter-spacing: -.005em; text-wrap: pretty; }
+.case-mini .metric { display: block; margin-top: 9px; font-size: 12px; font-weight: 700; color: var(--amber-ink); font-variant-numeric: tabular-nums; }
+.case-metrics { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 13px; }
+.case-metrics span { font-size: 11.5px; font-weight: 700; color: var(--navy); background: var(--soft); border: 1px solid var(--line); border-radius: 999px; padding: 3px 10px; font-variant-numeric: tabular-nums; }
+.pdf-link { display: inline-flex; align-items: center; gap: 8px; margin-top: 18px; padding: 11px 18px; border: 1.5px solid var(--navy); border-radius: 9px; font-size: 13.5px; font-weight: 700; color: var(--navy); text-decoration: none; }
+.pdf-link:hover { border-color: var(--amber); }
+.pdf-link .ic { width: 15px; height: 15px; }
+@media (max-width: 760px) {
+  .case-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+}
+@media (max-width: 480px) {
+  .case-grid { grid-template-columns: 1fr; }
+}
+
 /* ---------- 인쇄 최적화 (Ctrl+P → PDF) ---------- */
 @media print {
   @page { margin: 14mm; }
@@ -205,6 +225,9 @@ button.btn { background: none; cursor: pointer; font: inherit; }
   .print-contact { display: block; margin-top: 8px; font-size: 9.5pt; color: #333; letter-spacing: .01em; }
   .case-hint { display: none; }
   .case-nav { display: none; }
+  .pdf-link { display: none !important; }
+  .case-mini, .case-mini:hover { border-color: #999; box-shadow: none; transform: none; }
+  .case-metrics span { border-color: #bbb; background: none; }
   .hero { background: none; color: #16324F; padding: 0 0 14px; border-bottom: 2.5px solid #16324F; margin-bottom: 4px; }
   .brand { margin-bottom: 14px; }
   .brand-text strong { color: #16324F; }
@@ -232,4 +255,5 @@ button.btn { background: none; cursor: pointer; font: inherit; }
   .contact-lead { color: #333; margin-bottom: 8px; }
   .email { color: #555; margin-top: 6px; }
   .footer { border-top: 1px solid #ddd; }
+  .footer span[aria-hidden="true"] { display: none; }
 }
