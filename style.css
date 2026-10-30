@@ -121,6 +121,18 @@ button.btn { background: none; cursor: pointer; font: inherit; }
 .footer a { color: var(--muted); text-decoration: none; border-bottom: 1px solid var(--line); padding-bottom: 1px; }
 .footer a:hover { color: var(--navy); }
 
+/* ---------- 케이스 이전/다음 이동 ---------- */
+.case-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 32px; }
+.case-nav a { display: block; padding: 14px 18px; border: 1px solid var(--line); border-radius: 10px; background: #fff; text-decoration: none; transition: border-color .15s ease; }
+.case-nav a:hover { border-color: var(--amber); }
+.case-nav .dir { display: block; font-size: 11.5px; font-weight: 800; color: var(--amber-ink); letter-spacing: .05em; }
+.case-nav strong { display: block; margin-top: 4px; font-size: 13.5px; font-weight: 700; color: var(--navy); line-height: 1.45; }
+.case-nav .next { text-align: right; }
+@media (max-width: 760px) {
+  .case-nav { grid-template-columns: 1fr; }
+  .case-nav .next { text-align: left; }
+}
+
 @media (max-width: 760px) {
   .wrap { padding: 0 22px; }
   .hero { padding: 26px 0 44px; }
@@ -192,6 +204,7 @@ button.btn { background: none; cursor: pointer; font: inherit; }
   .brand-left svg, .actions, .brand-mail, .more, .btn, .home-link, .resume-note, .hero-photo, .footer a { display: none !important; }
   .print-contact { display: block; margin-top: 8px; font-size: 9.5pt; color: #333; letter-spacing: .01em; }
   .case-hint { display: none; }
+  .case-nav { display: none; }
   .hero { background: none; color: #16324F; padding: 0 0 14px; border-bottom: 2.5px solid #16324F; margin-bottom: 4px; }
   .brand { margin-bottom: 14px; }
   .brand-text strong { color: #16324F; }
