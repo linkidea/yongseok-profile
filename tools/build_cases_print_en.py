@@ -11,7 +11,7 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from build_cases_print import BASE, LOCAL_STYLE, extract  # noqa: E402
 
-STYLE_VERSION = "17"
+STYLE_VERSION = "16"
 
 CASES = [
     ("en-case-risk.html", "CASE 01", "Risk · Audit"),

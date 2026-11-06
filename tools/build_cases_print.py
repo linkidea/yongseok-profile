@@ -15,7 +15,7 @@ CASES = [
     ("case-strategy.html", "CASE 04", "전략·기획"),
     ("case.html", "CASE 05", "자동화·데이터"),
 ]
-STYLE_VERSION = "17"
+STYLE_VERSION = "16"
 
 LOCAL_STYLE = """
 .cv-hero { padding: 40px 0 46px; }
