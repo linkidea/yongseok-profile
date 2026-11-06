@@ -15,7 +15,7 @@ CASES = [
     ("case-strategy.html", "CASE 04", "전략·기획"),
     ("case.html", "CASE 05", "자동화·데이터"),
 ]
-STYLE_VERSION = "16"
+STYLE_VERSION = "22"
 
 LOCAL_STYLE = """
 .cv-hero { padding: 40px 0 46px; }
@@ -122,6 +122,7 @@ def main():
 <link rel="alternate" hreflang="ko" href="https://linkidea.github.io/yongseok-profile/cases-print.html">
 <link rel="alternate" hreflang="en" href="https://linkidea.github.io/yongseok-profile/en-cases-print.html">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%2316324F'/><rect x='6' y='22' width='4' height='4' fill='%23ffffff' opacity='.5'/><rect x='12' y='17' width='4' height='9' fill='%23ffffff' opacity='.7'/><rect x='18' y='12' width='4' height='14' fill='%23ffffff' opacity='.85'/><rect x='24' y='7' width='4' height='19' fill='%23E8A33D'/></svg>">
+<link rel="preload" href="https://cdn.jsdelivr.net/gh/fonts-archive/MaruBuri/MaruBuri-Bold.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="style.css?v=__V__">
 <style>__STYLE__</style>
