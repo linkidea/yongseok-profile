@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#16324F">
-<title>케이스 스터디 — 강용석 | 내부감사·리스크·구매·PI</title>
+<title>케이스 스터디 — 강용석 | 구매·PI·기획·감사</title>
 <meta name="description" content="예방형 리스크 체계, 전사 구매 시스템, 신용평가 자동화 — 강용석의 실무 케이스 스터디. 문제 → 접근 → 결과 → 시사점으로 정리했습니다.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="케이스 스터디 — 강용석">
@@ -22,13 +22,27 @@
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/fonts-archive/MaruBuri/MaruBuri-Bold.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css?v=22">
 <style>
-.cv-hero { padding: 40px 0 46px; }
-.cv-hero h1 { font-size: clamp(24px, 3.4vw, 33px); line-height: 1.4; }
-.cv-hero .sub { margin-top: 12px; font-size: 14.5px; max-width: 620px; text-wrap: balance; }
-.case-kicker { font-size: 12px; font-weight: 700; color: var(--amber); letter-spacing: .18em; margin-bottom: 14px; }
+.cv-hero { padding: 40px 0 54px; }
+.cv-hero .brand { padding-bottom: 18px; border-bottom: 1px solid rgba(255,255,255,.14); margin-bottom: 0; }
+.cv-hero h1 { font-size: clamp(34px, 4.6vw, 46px); line-height: 1.24; }
+.cv-hero .sub { margin-top: 16px; font-size: 15.5px; line-height: 1.7; max-width: 560px; color: rgba(255,255,255,.8); text-wrap: pretty; }
 .home-link { color: rgba(255,255,255,.75); font-size: 13.5px; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,.3); padding-bottom: 2px; white-space: nowrap; }
 .home-link:hover { color: #fff; }
 .hero-links { display: flex; align-items: center; gap: 15px; flex-wrap: wrap; }
+.cases-hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 48px; align-items: center; padding-top: 40px; }
+.cases-hero-meta { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 9px 14px; max-width: 560px; margin: 22px 0 0; padding: 13px 0; border-top: 1px solid rgba(255,255,255,.16); border-bottom: 1px solid rgba(255,255,255,.16); }
+.cases-hero-meta dt { padding-top: 2px; font-size: 11px; font-weight: 800; letter-spacing: .09em; color: var(--amber); }
+.cases-hero-meta dd { margin: 0; font-size: 13px; line-height: 1.55; color: rgba(255,255,255,.84); }
+.cases-hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 24px; }
+.cases-hero-textlink { display: inline-block; padding: 8px 0 4px; font-size: 13px; font-weight: 700; color: #fff; text-decoration: none; border-bottom: 1px solid rgba(232,163,61,.7); }
+.cases-hero-textlink:hover { color: var(--amber); }
+.cases-hero-map { border-top: 2px solid var(--amber); padding-top: 8px; }
+.cases-map-item { display: grid; grid-template-columns: 24px minmax(0, 1fr); gap: 2px 8px; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,.14); color: inherit; text-decoration: none; }
+.cases-map-item .no { grid-column: 1; grid-row: 1 / span 2; padding-top: 2px; font-size: 11px; font-weight: 800; letter-spacing: .08em; color: var(--amber); font-variant-numeric: tabular-nums; }
+.cases-map-item strong { grid-column: 2; grid-row: 1; display: block; font-size: 13px; font-weight: 700; line-height: 1.45; color: #fff; }
+.cases-map-item .tag { grid-column: 2; grid-row: 2; display: block; margin-top: 1px; font-size: 11px; color: rgba(255,255,255,.55); }
+.cases-map-item:hover strong { color: var(--amber); }
+.page-cases .sec-title { font-size: clamp(25px, 2.8vw, 30px); }
 .case-index { display: grid; gap: 18px; }
 .case-card { display: block; padding: 24px 26px; border: 1px solid var(--line); border-radius: 14px; text-decoration: none; color: inherit; background: #fff; transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease; }
 .case-card:hover { border-color: var(--amber); box-shadow: 0 10px 28px rgba(22,50,79,.08); transform: translateY(-2px); }
@@ -41,14 +55,34 @@
 .case-note { margin-top: 22px; font-size: 13px; color: var(--muted); }
 .case-note a { color: var(--navy); font-weight: 700; text-decoration: none; border-bottom: 1.5px solid var(--amber); padding-bottom: 1px; }
 @media (max-width: 760px) {
+  .cv-hero { padding: 26px 0 42px; }
+  .cv-hero .brand { padding-bottom: 14px; }
+  .cases-hero-grid { grid-template-columns: 1fr; gap: 0; padding-top: 26px; }
+  .cv-hero h1 { font-size: 34px; }
+  .cv-hero .sub { font-size: 14.5px; }
+  .cases-hero-meta { margin-top: 18px; padding: 11px 0; }
+  .cases-hero-actions { margin-top: 20px; }
+  .cases-hero-actions .btn { flex: 1 1 100%; }
+  .cases-hero-textlink { flex: 1 1 100%; text-align: center; }
+  .cases-hero-map { display: none; }
   .case-card { padding: 20px 20px; }
 }
 @media print {
+  .cv-hero { padding: 0 0 16px; margin-bottom: 4px; }
+  .cv-hero .brand { padding-bottom: 12px; border-bottom: none; }
+  .cases-hero-grid { display: block; padding-top: 0; }
+  .cases-hero-map, .cases-hero-actions { display: none !important; }
+  .cv-hero h1 { font-size: 17pt; color: #16324F; }
+  .cv-hero .sub { color: #333; font-size: 10pt; }
+  .cases-hero-meta { margin-top: 10px; padding: 8px 0; border-color: #bbb; max-width: none; }
+  .cases-hero-meta dt { color: #16324F; }
+  .cases-hero-meta dd { color: #333; font-size: 9.5pt; }
+  .page-cases .sec-title { font-size: 15pt; }
   .case-card { break-inside: avoid; border-color: #999; }
 }
 </style>
 </head>
-<body>
+<body class="page-cases">
 
 <header class="hero cv-hero">
   <div class="wrap">
@@ -72,15 +106,40 @@
         <a class="home-link" href="career.html">경력 상세</a>
       </div>
     </div>
-    <p class="case-kicker">CASE STUDIES</p>
-    <h1>숫자 뒤의 구조를 봅니다</h1>
-    <p class="sub">문제 → 접근 → 결과 → 시사점. 일한 방식을 다섯 가지 케이스로 정리했습니다.</p>
+
+    <div class="cases-hero-grid">
+      <div class="cases-hero-main">
+        <h1>숫자 뒤의 구조를 봅니다</h1>
+        <p class="sub">문제 → 접근 → 결과 → 시사점. 일한 방식을 다섯 가지 케이스로 정리했습니다.</p>
+        <dl class="cases-hero-meta">
+          <dt>케이스</dt>
+          <dd>5건 — 리스크·감사 · 감사·윤리 · 구매·PI·데이터 · 전략·기획 · 자동화·데이터</dd>
+          <dt>읽는 법</dt>
+          <dd>문제 → 접근 → 결과 → 시사점</dd>
+        </dl>
+        <div class="cases-hero-actions">
+          <a class="btn btn-amber" href="mailto:fwipace@naver.com?subject=%EC%9D%B4%EB%A0%A5%EC%84%9C%20%EC%9A%94%EC%B2%AD"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>이력서 요청하기</a>
+          <a class="cases-hero-textlink" href="#case-list">케이스 5건 보기 →</a>
+        </div>
+      </div>
+
+      <nav class="cases-hero-map" aria-label="케이스 바로가기">
+        <a class="cases-map-item" href="case-risk.html"><span class="no">01</span><strong>예방형 리스크 체계</strong><span class="tag">리스크·감사</span></a>
+        <a class="cases-map-item" href="case-diagnosis.html"><span class="no">02</span><strong>감사 사례 분석</strong><span class="tag">감사·윤리</span></a>
+        <a class="cases-map-item" href="case-purchase.html"><span class="no">03</span><strong>전사 구매 시스템</strong><span class="tag">구매·PI·데이터</span></a>
+        <a class="cases-map-item" href="case-strategy.html"><span class="no">04</span><strong>전략기획·신규 서비스</strong><span class="tag">전략·기획</span></a>
+        <a class="cases-map-item" href="case.html"><span class="no">05</span><strong>신용평가 자동화</strong><span class="tag">자동화·데이터</span></a>
+      </nav>
+    </div>
   </div>
 </header>
 
-<section class="section">
+<section class="section" id="case-list">
   <div class="wrap">
-    <h2 class="label"><span class="no">01</span><span class="tx">케이스 스터디</span></h2>
+    <header class="sec-head">
+      <span class="sec-no">01</span>
+      <h2 class="sec-title">케이스 스터디</h2>
+    </header>
     <div class="case-index">
       <a class="case-card" href="case-risk.html">
         <span class="case-head"><span class="case-no">CASE 01</span><span class="case-tag">리스크·감사</span></span>
